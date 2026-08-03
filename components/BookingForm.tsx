@@ -53,7 +53,8 @@ export function BookingForm({
 
   const prefer = dict.booking.prefer
     .replace("{phone}", siteConfig.phoneDisplay)
-    .replace("{wechat}", siteConfig.wechat);
+    .replace("{wechat}", siteConfig.wechat)
+    .replace("{line}", siteConfig.lineDisplay);
 
   return (
     <form onSubmit={onSubmit} className={compact ? "space-y-4" : "space-y-5"}>

@@ -145,6 +145,16 @@ export default async function AboutPage({
               </a>
               <br />
               {dict.common.wechat} {siteConfig.wechat}
+              <br />
+              {dict.common.line}{" "}
+              <a
+                href={siteConfig.lineHref}
+                target="_blank"
+                rel="noreferrer"
+                className="text-yellow"
+              >
+                {siteConfig.lineDisplay}
+              </a>
             </p>
             <Link href={localizedPath(locale, "/contact")} className="btn btn-primary mt-5">
               {dict.common.contactUs}

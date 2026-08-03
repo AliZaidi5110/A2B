@@ -55,6 +55,14 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <Link href={localizedPath(locale, "/contact")} className="btn btn-ghost">
                   {dict.common.wechat} {siteConfig.wechat}
                 </Link>
+                <a
+                  href={siteConfig.lineHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-ghost"
+                >
+                  {dict.common.line} {siteConfig.lineDisplay}
+                </a>
               </div>
             </SlideIn>
           </div>

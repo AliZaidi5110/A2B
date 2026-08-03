@@ -45,6 +45,8 @@ export const zh: Dictionary = {
     requestQuote: "获取报价",
     wechat: "微信",
     wechatId: "微信号",
+    line: "LINE",
+    lineHint: "通过 LINE 添加（台湾）",
     available: "服务时间",
     companyNo: "公司编号",
     rights: "版权所有。",
@@ -212,7 +214,7 @@ export const zh: Dictionary = {
     sending: "提交中...",
     success: "感谢您。我们已收到咨询，将尽快回复。",
     error: "提交失败，请稍后重试。",
-    prefer: "需要即时预订？请致电 {phone} 或微信 {wechat}。",
+    prefer: "需要即时预订？请致电 {phone}、微信 {wechat}，或 LINE {line}。",
   },
   drivers: {
     eyebrow: "专业司机团队",
@@ -251,7 +253,7 @@ export const zh: Dictionary = {
   faqs: [
     {
       q: "如何预订专车？",
-      a: "请致电 +44 7938 994070，微信联系 kp61pke，或通过网站表单提交咨询。",
+      a: "请致电 +44 7938 994070，微信 kp61pke，或 LINE +44 7938 994070，或通过网站表单提交咨询。",
     },
     {
       q: "有哪些可用车辆？",
@@ -268,7 +270,7 @@ export const zh: Dictionary = {
   ],
   contact: {
     pageTitle: "联系我们",
-    pageSubtitle: "预订方式：致电、微信联系，或在下方留言。",
+    pageSubtitle: "预订方式：致电、微信、LINE，或在下方留言。",
     callUs: "全天候致电",
     office: "办公地址",
     formTitle: "发送留言",
@@ -276,7 +278,7 @@ export const zh: Dictionary = {
     openingHours: "营业时间：",
     hoursValue: "全天候",
     hoursBody:
-      "我们的专车司机全天候服务英国全境。可电话、微信或留言联系 — 每次出行我们都会选择最高效的路线。",
+      "我们的专车司机全天候服务英国全境。可电话、微信、LINE 或留言联系 — 每次出行我们都会选择最高效的路线。",
     social: "社交：",
     getTaxiOnline: "在线预订",
     yourName: "您的姓名 *",
@@ -297,7 +299,7 @@ export const zh: Dictionary = {
     pageSubtitle: "定制观光与私人专车旅游，依托28年值得信赖的专业经验。",
     experienceBadge: "28年专业经验",
     ctaTitle: "准备好开启私人观光了吗？",
-    ctaBody: "立即致电或微信联系，定制您的专属行程。",
+    ctaBody: "立即致电、微信或 LINE 联系，定制您的专属行程。",
     bookTour: "预订观光",
     items: [
       {

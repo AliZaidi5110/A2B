@@ -45,6 +45,8 @@ export const ms: Dictionary = {
     requestQuote: "Minta Sebutharga",
     wechat: "WeChat",
     wechatId: "ID WeChat",
+    line: "LINE",
+    lineHint: "Tambah di LINE (Taiwan)",
     available: "Tersedia",
     companyNo: "No. Syarikat",
     rights: "Hak cipta terpelihara.",
@@ -231,7 +233,7 @@ export const ms: Dictionary = {
     success: "Terima kasih. Kami telah menerima pertanyaan anda dan akan membalas tidak lama lagi.",
     error: "Sesuatu telah berlaku.",
     prefer:
-      "Lebih suka tempahan segera? Telefon {phone} atau WeChat {wechat}.",
+      "Lebih suka tempahan segera? Telefon {phone}, WeChat {wechat}, atau LINE {line}.",
   },
   drivers: {
     eyebrow: "Pemandu Pakar Kami",
@@ -273,7 +275,7 @@ export const ms: Dictionary = {
   faqs: [
     {
       q: "Bagaimana saya menempah chauffeur?",
-      a: "Telefon +44 7938 994070, mesej kami di WeChat (kp61pke), atau hantar pertanyaan melalui borang hubungan.",
+      a: "Telefon +44 7938 994070, mesej kami di WeChat (kp61pke) atau LINE (+44 7938 994070), atau hantar pertanyaan melalui borang hubungan.",
     },
     {
       q: "Kenderaan mana yang tersedia?",
@@ -291,7 +293,7 @@ export const ms: Dictionary = {
   contact: {
     pageTitle: "Hubungi Kami",
     pageSubtitle:
-      "Untuk membuat pesanan: telefon kami, mesej di WeChat, atau tinggalkan mesej di bawah.",
+      "Untuk membuat pesanan: telefon kami, mesej di WeChat atau LINE, atau tinggalkan mesej di bawah.",
     callUs: "Hubungi Kami 24/7",
     office: "Pejabat",
     formTitle: "Hantar Mesej",
@@ -299,7 +301,7 @@ export const ms: Dictionary = {
     openingHours: "Waktu Operasi:",
     hoursValue: "24/7",
     hoursBody:
-      "Chauffeur kami tersedia sepanjang masa di seluruh United Kingdom. Telefon, WeChat, atau hantar mesej — kami mengambil laluan paling cekap untuk setiap perjalanan.",
+      "Chauffeur kami tersedia sepanjang masa di seluruh United Kingdom. Telefon, WeChat, LINE, atau hantar mesej — kami mengambil laluan paling cekap untuk setiap perjalanan.",
     social: "Sosial:",
     getTaxiOnline: "Tempah Dalam Talian",
     yourName: "Nama Anda *",

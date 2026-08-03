@@ -31,6 +31,14 @@ function ChatIcon() {
   );
 }
 
+function LineIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
+      <path d="M19.5 4.2H4.5A2.3 2.3 0 002.2 6.5v8.1a2.3 2.3 0 002.3 2.3h2.1V20l3.6-3.1h9.3a2.3 2.3 0 002.3-2.3V6.5a2.3 2.3 0 00-2.3-2.3zm-2.4 8.2H15v1.4h2.1v-1.4zm-3.5 0h-2.1v1.4h2.1v-1.4zm-3.5 0H8v1.4h2.1v-1.4zm7.7-3.5H8v1.4h9.8V9z" />
+    </svg>
+  );
+}
+
 function PinIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden>
@@ -100,6 +108,27 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
               </div>
             </li>
             <li>
+              <a
+                href={siteConfig.lineHref}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-start gap-4 text-foreground transition hover:text-yellow"
+              >
+                <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow transition group-hover:bg-yellow group-hover:text-ink">
+                  <LineIcon />
+                </span>
+                <span>
+                  <span className="block text-xs font-bold uppercase tracking-[0.16em] text-muted">
+                    {dict.common.line}
+                  </span>
+                  <span className="mt-1 block font-display text-2xl tracking-wide">
+                    {siteConfig.lineDisplay}
+                  </span>
+                  <span className="mt-1 block text-sm text-muted">{dict.common.lineHint}</span>
+                </span>
+              </a>
+            </li>
+            <li>
               <div className="flex items-start gap-4 text-foreground">
                 <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow">
                   <PinIcon />
@@ -140,6 +169,16 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
               <span className="social-orb" title={`WeChat ${siteConfig.wechat}`}>
                 微
               </span>
+              <a
+                href={siteConfig.lineHref}
+                target="_blank"
+                rel="noreferrer"
+                className="social-orb"
+                aria-label="LINE"
+                title={`LINE ${siteConfig.lineDisplay}`}
+              >
+                L
+              </a>
             </div>
           </div>
 

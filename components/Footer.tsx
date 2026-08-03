@@ -33,6 +33,17 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <p className="mt-2 text-sm text-muted">
             {dict.common.wechat}: {siteConfig.wechat}
           </p>
+          <p className="mt-1 text-sm text-muted">
+            {dict.common.line}:{" "}
+            <a
+              href={siteConfig.lineHref}
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-yellow"
+            >
+              {siteConfig.lineDisplay}
+            </a>
+          </p>
         </div>
 
         <div>

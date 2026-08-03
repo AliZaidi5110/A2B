@@ -45,6 +45,8 @@ export const id: Dictionary = {
     requestQuote: "Minta Penawaran",
     wechat: "WeChat",
     wechatId: "ID WeChat",
+    line: "LINE",
+    lineHint: "Tambahkan di LINE (Taiwan)",
     available: "Tersedia",
     companyNo: "No. Perusahaan",
     rights: "Hak cipta dilindungi.",
@@ -231,7 +233,7 @@ export const id: Dictionary = {
     success: "Terima kasih. Kami telah menerima permintaan Anda dan akan segera merespons.",
     error: "Terjadi kesalahan.",
     prefer:
-      "Lebih suka pemesanan instan? Telepon {phone} atau WeChat {wechat}.",
+      "Lebih suka pemesanan instan? Telepon {phone}, WeChat {wechat}, atau LINE {line}.",
   },
   drivers: {
     eyebrow: "Pengemudi Ahli Kami",
@@ -273,7 +275,7 @@ export const id: Dictionary = {
   faqs: [
     {
       q: "Bagaimana cara memesan chauffeur?",
-      a: "Telepon +44 7938 994070, kirim pesan di WeChat (kp61pke), atau kirim permintaan melalui formulir kontak.",
+      a: "Telepon +44 7938 994070, kirim pesan di WeChat (kp61pke) atau LINE (+44 7938 994070), atau kirim permintaan melalui formulir kontak.",
     },
     {
       q: "Kendaraan apa saja yang tersedia?",
@@ -291,7 +293,7 @@ export const id: Dictionary = {
   contact: {
     pageTitle: "Hubungi Kami",
     pageSubtitle:
-      "Untuk memesan: telepon kami, kirim pesan di WeChat, atau tinggalkan pesan di bawah.",
+      "Untuk memesan: telepon kami, kirim pesan di WeChat atau LINE, atau tinggalkan pesan di bawah.",
     callUs: "Hubungi Kami 24/7",
     office: "Kantor",
     formTitle: "Kirim Pesan",
@@ -299,7 +301,7 @@ export const id: Dictionary = {
     openingHours: "Jam Buka:",
     hoursValue: "24/7",
     hoursBody:
-      "Chauffeur kami tersedia sepanjang waktu di seluruh Britania Raya. Telepon, WeChat, atau kirim pesan — kami menempuh rute paling efisien di setiap perjalanan.",
+      "Chauffeur kami tersedia sepanjang waktu di seluruh Britania Raya. Telepon, WeChat, LINE, atau kirim pesan — kami menempuh rute paling efisien di setiap perjalanan.",
     social: "Sosial:",
     getTaxiOnline: "Pesan Online",
     yourName: "Nama Anda *",
