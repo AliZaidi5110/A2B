@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { SocialLinks } from "@/components/SocialLinks";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
@@ -32,7 +33,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               {dict.about.experienceYears}+ {dict.about.experienceLabel}
             </span>
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <SocialLinks compact className="hidden sm:flex" />
             <LanguageSwitcher locale={locale} />
             <a
               href={`tel:${siteConfig.phoneTel}`}

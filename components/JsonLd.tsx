@@ -22,6 +22,11 @@ export function JsonLd() {
     },
     openingHours: "Mo-Su 00:00-23:59",
     priceRange: "$$$",
+    sameAs: [
+      siteConfig.social.instagram,
+      siteConfig.social.facebook,
+      siteConfig.social.tiktok,
+    ],
   };
 
   return (

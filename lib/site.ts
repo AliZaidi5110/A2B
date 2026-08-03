@@ -23,6 +23,8 @@ export const siteConfig = {
   companyNumber: "16359369",
   hours: "24/7",
   social: {
-    tripadvisor: "https://www.tripadvisor.com",
+    instagram: "https://www.instagram.com/silver.harbour",
+    facebook: "https://www.facebook.com/share/14sxMByKW4x/",
+    tiktok: "https://www.tiktok.com/@agreenharbour",
   },
 } as const;

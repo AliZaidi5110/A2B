@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SocialLinks } from "@/components/SocialLinks";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
@@ -96,6 +97,10 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <p className="mt-4 text-sm text-muted">
             {dict.common.available} {siteConfig.hours}
           </p>
+          <p className="mt-6 text-sm font-bold uppercase tracking-[0.18em] text-yellow">
+            {dict.contact.social}
+          </p>
+          <SocialLinks className="mt-3" />
           <Link href={localizedPath(locale, "/contact")} className="btn btn-primary mt-5">
             {dict.common.bookYourRide}
           </Link>

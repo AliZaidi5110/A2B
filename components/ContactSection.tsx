@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContactMessageForm } from "@/components/ContactMessageForm";
 import { SlideIn } from "@/components/SlideIn";
+import { SocialLinks } from "@/components/SocialLinks";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
@@ -149,37 +150,7 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
 
           <div className="mt-10">
             <p className="text-sm font-bold text-foreground">{dict.contact.social}</p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href={siteConfig.social.tripadvisor}
-                target="_blank"
-                rel="noreferrer"
-                className="social-orb"
-                aria-label="Tripadvisor"
-              >
-                T
-              </a>
-              <a
-                href={`tel:${siteConfig.phoneTel}`}
-                className="social-orb"
-                aria-label="Phone"
-              >
-                ☎
-              </a>
-              <span className="social-orb" title={`WeChat ${siteConfig.wechat}`}>
-                微
-              </span>
-              <a
-                href={siteConfig.lineHref}
-                target="_blank"
-                rel="noreferrer"
-                className="social-orb"
-                aria-label="LINE"
-                title={`LINE ${siteConfig.lineDisplay}`}
-              >
-                L
-              </a>
-            </div>
+            <SocialLinks className="mt-4" />
           </div>
 
           <Link
