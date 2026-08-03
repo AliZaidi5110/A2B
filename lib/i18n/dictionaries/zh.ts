@@ -51,7 +51,6 @@ export const zh: Dictionary = {
     companyNo: "公司编号",
     rights: "版权所有。",
     language: "语言",
-    languageChanged: "语言已切换为 {lang}",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",

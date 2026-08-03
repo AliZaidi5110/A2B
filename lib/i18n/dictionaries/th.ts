@@ -51,7 +51,6 @@ export const th: Dictionary = {
     companyNo: "เลขที่บริษัท",
     rights: "สงวนลิขสิทธิ์",
     language: "ภาษา",
-    languageChanged: "เปลี่ยนภาษาเป็น {lang}",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",

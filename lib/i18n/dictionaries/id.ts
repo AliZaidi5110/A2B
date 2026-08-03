@@ -51,7 +51,6 @@ export const id: Dictionary = {
     companyNo: "No. Perusahaan",
     rights: "Hak cipta dilindungi.",
     language: "Bahasa",
-    languageChanged: "Bahasa diganti ke {lang}",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",
