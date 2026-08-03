@@ -26,5 +26,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/silver.harbour",
     facebook: "https://www.facebook.com/share/14sxMByKW4x/",
     tiktok: "https://www.tiktok.com/@agreenharbour",
+    /** Xiaohongshu (RedNote / 小红书) */
+    rednote: "https://xhslink.com/m/87XPlLFpe6a",
   },
 } as const;

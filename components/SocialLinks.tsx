@@ -32,6 +32,15 @@ function TikTokIcon() {
   );
 }
 
+/** Xiaohongshu / RedNote — open book mark style */
+function RedNoteIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-[1.1em] w-[1.1em]" fill="currentColor" aria-hidden>
+      <path d="M6.2 3.5h9.1A2.7 2.7 0 0118 6.2v14.1l-5.3-2.8-5.3 2.8V6.2a2.7 2.7 0 012.7-2.7zm1.8 4.2v1.6h7.2V7.7H8zm0 3.2v1.6h7.2v-1.6H8zm0 3.2v1.6h4.8v-1.6H8z" />
+    </svg>
+  );
+}
+
 const links = [
   {
     key: "instagram",
@@ -50,6 +59,12 @@ const links = [
     href: siteConfig.social.tiktok,
     label: "TikTok",
     Icon: TikTokIcon,
+  },
+  {
+    key: "rednote",
+    href: siteConfig.social.rednote,
+    label: "Xiaohongshu (RedNote)",
+    Icon: RedNoteIcon,
   },
 ] as const;
 

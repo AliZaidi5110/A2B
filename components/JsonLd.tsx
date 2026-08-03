@@ -26,6 +26,7 @@ export function JsonLd() {
       siteConfig.social.instagram,
       siteConfig.social.facebook,
       siteConfig.social.tiktok,
+      siteConfig.social.rednote,
     ],
   };
 
