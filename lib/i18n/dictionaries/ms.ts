@@ -51,6 +51,7 @@ export const ms: Dictionary = {
     companyNo: "No. Syarikat",
     rights: "Hak cipta terpelihara.",
     language: "Bahasa",
+    languageChanged: "Bahasa ditukar kepada {lang}",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",

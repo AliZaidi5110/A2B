@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Manrope } from "next/font/google";
+import { LanguageToaster } from "@/components/LanguageToaster";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -47,7 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        {children}
+        <LanguageToaster />
+      </body>
     </html>
   );
 }

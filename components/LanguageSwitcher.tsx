@@ -1,6 +1,8 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import { toast } from "sonner";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 import { localeLabels, locales, type Locale } from "@/lib/i18n/config";
 
 export function LanguageSwitcher({ locale }: { locale: Locale }) {
@@ -17,6 +19,15 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
         className="max-w-[11rem] cursor-pointer border border-line bg-surface px-2 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-foreground outline-none transition hover:border-yellow focus:border-yellow"
         onChange={(e) => {
           const next = e.target.value as Locale;
+          if (next === locale) return;
+
+          const message = getDictionary(next)
+            .common.languageChanged.replace("{lang}", localeLabels[next]);
+
+          toast.success(message, {
+            id: "language-switch",
+          });
+
           router.push(`/${next}${rest}`);
         }}
       >

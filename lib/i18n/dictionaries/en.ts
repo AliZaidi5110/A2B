@@ -49,6 +49,7 @@ export const en = {
     companyNo: "Company No.",
     rights: "All rights reserved.",
     language: "Language",
+    languageChanged: "Language set to {lang}",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",
