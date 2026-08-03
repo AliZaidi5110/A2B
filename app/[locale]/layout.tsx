@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { LangAttr } from "@/components/LangAttr";
-import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { isLocale, localeHtmlLang, locales, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
 export function generateStaticParams() {
@@ -21,12 +21,10 @@ export default async function LocaleLayout({
   if (!isLocale(localeParam)) notFound();
   const locale = localeParam as Locale;
   const dict = getDictionary(locale);
+  const fontClass = locale === "zh" || locale === "th" ? "font-cjk" : "";
 
   return (
-    <div
-      lang={locale === "zh" ? "zh-CN" : "en-GB"}
-      className={`flex min-h-full flex-1 flex-col ${locale === "zh" ? "font-zh" : ""}`}
-    >
+    <div lang={localeHtmlLang[locale]} className={`flex min-h-full flex-1 flex-col ${fontClass}`}>
       <LangAttr locale={locale} />
       <JsonLd />
       <Header locale={locale} dict={dict} />

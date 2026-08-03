@@ -8,6 +8,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     { href: "/", label: dict.nav.home },
     { href: "/fleet", label: dict.nav.fleet },
     { href: "/services", label: dict.nav.services },
+    { href: "/tours", label: dict.nav.tours },
     { href: "/about", label: dict.nav.about },
     { href: "/contact", label: dict.nav.contact },
   ];
@@ -20,6 +21,9 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             {siteConfig.shortName}
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">{dict.footer.blurb}</p>
+          <p className="mt-3 text-sm font-bold text-yellow">
+            {dict.about.experienceYears}+ {dict.about.experienceLabel}
+          </p>
           <a
             href={`tel:${siteConfig.phoneTel}`}
             className="mt-5 inline-block font-display text-2xl text-foreground transition hover:text-yellow"

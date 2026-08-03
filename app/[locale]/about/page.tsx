@@ -49,6 +49,16 @@ export default async function AboutPage({
             <SlideIn>
               <p className="eyebrow">{dict.about.storyEyebrow}</p>
             </SlideIn>
+            <SlideIn delay={80}>
+              <div className="mt-4 inline-flex items-end gap-3 border border-yellow/40 bg-yellow/10 px-4 py-3">
+                <span className="display text-5xl leading-none text-yellow">
+                  {dict.about.experienceYears}
+                </span>
+                <span className="pb-1 text-xs font-bold uppercase tracking-[0.16em] text-foreground">
+                  {dict.about.experienceLabel}
+                </span>
+              </div>
+            </SlideIn>
             <SlideIn delay={120}>
               <h2 className="display mt-4 text-4xl text-foreground sm:text-5xl">
                 {dict.about.storyTitle}

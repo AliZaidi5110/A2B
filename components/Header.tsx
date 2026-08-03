@@ -12,6 +12,7 @@ const navKeys = [
   { key: "home", href: "/" },
   { key: "fleet", href: "/fleet" },
   { key: "services", href: "/services" },
+  { key: "tours", href: "/tours" },
   { key: "about", href: "/about" },
   { key: "contact", href: "/contact" },
 ] as const;
@@ -26,12 +27,13 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         <div className="container-site flex flex-wrap items-center justify-between gap-3 py-2 text-sm text-muted">
           <p className="font-medium tracking-wide">
             {dict.header.callLabel} · <span className="text-yellow">{siteConfig.hours}</span>
+            <span className="mx-2 text-line">|</span>
+            <span className="text-yellow">
+              {dict.about.experienceYears}+ {dict.about.experienceLabel}
+            </span>
           </p>
           <div className="flex items-center gap-4">
-            <LanguageSwitcher
-              locale={locale}
-              labels={{ english: dict.common.english, chinese: dict.common.chinese }}
-            />
+            <LanguageSwitcher locale={locale} />
             <a
               href={`tel:${siteConfig.phoneTel}`}
               className="font-display text-lg tracking-wide text-foreground transition hover:text-yellow"
@@ -56,7 +58,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 xl:flex">
           {navKeys.map((item) => {
             const href = localizedPath(locale, item.href);
             const active = pathname === href;
@@ -85,7 +87,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             type="button"
             aria-label={dict.common.menu}
             aria-expanded={open}
-            className="btn btn-ghost px-3 lg:hidden"
+            className="btn btn-ghost px-3 xl:hidden"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? dict.common.close : dict.common.menu}
@@ -94,13 +96,10 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       </div>
 
       {open ? (
-        <div className="border-t border-line bg-surface lg:hidden">
+        <div className="border-t border-line bg-surface xl:hidden">
           <nav className="container-site flex flex-col gap-1 py-4">
             <div className="mb-2 px-3">
-              <LanguageSwitcher
-                locale={locale}
-                labels={{ english: dict.common.english, chinese: dict.common.chinese }}
-              />
+              <LanguageSwitcher locale={locale} />
             </div>
             {navKeys.map((item) => (
               <Link

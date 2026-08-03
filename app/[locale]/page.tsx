@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Stats } from "@/components/Stats";
 import { Testimonials } from "@/components/Testimonials";
+import { ToursGrid } from "@/components/ToursGrid";
 import { isLocale, localizedPath, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
@@ -26,6 +27,9 @@ export async function generateMetadata({
       languages: {
         en: "/en",
         "zh-CN": "/zh",
+        id: "/id",
+        ms: "/ms",
+        th: "/th",
       },
     },
   };
@@ -45,6 +49,7 @@ export default async function HomePage({
       <Hero locale={locale} dict={dict} />
       <ServicesGrid locale={locale} dict={dict} limit={3} />
       <AboutSection locale={locale} dict={dict} />
+      <ToursGrid locale={locale} dict={dict} limit={2} />
       <FleetGrid locale={locale} dict={dict} limit={4} />
       <BookingBand dict={dict} />
       <Drivers dict={dict} />

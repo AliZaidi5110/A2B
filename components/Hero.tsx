@@ -7,10 +7,14 @@ import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
 
 export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
-  const orbitLabel =
-    locale === "zh"
-      ? "A2B 专车旅游 • 英国豪华出行 • A2B • "
-      : "A2B CHAUFFEUR TOURS • LUXURY UK RIDES • A2B • ";
+  const orbitLabels: Record<Locale, string> = {
+    en: "A2B CHAUFFEUR TOURS • 28 YEARS EXPERIENCE • A2B • ",
+    zh: "A2B 专车旅游 • 28年经验 • A2B • ",
+    id: "A2B CHAUFFEUR TOURS • 28 TAHUN PENGALAMAN • A2B • ",
+    ms: "A2B CHAUFFEUR TOURS • 28 TAHUN PENGALAMAN • A2B • ",
+    th: "A2B CHAUFFEUR TOURS • ประสบการณ์ 28 ปี • A2B • ",
+  };
+  const orbitLabel = orbitLabels[locale];
 
   return (
     <section className="relative isolate min-h-[88vh] overflow-hidden">

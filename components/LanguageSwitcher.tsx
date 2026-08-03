@@ -1,42 +1,31 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { locales, type Locale } from "@/lib/i18n/config";
+import { usePathname, useRouter } from "next/navigation";
+import { localeLabels, locales, type Locale } from "@/lib/i18n/config";
 
-export function LanguageSwitcher({
-  locale,
-  labels,
-}: {
-  locale: Locale;
-  labels: { english: string; chinese: string };
-}) {
+export function LanguageSwitcher({ locale }: { locale: Locale }) {
   const pathname = usePathname();
-  const rest = pathname.replace(/^\/(en|zh)/, "") || "";
+  const router = useRouter();
+  const rest = pathname.replace(/^\/(en|zh|id|ms|th)/, "") || "";
 
   return (
-    <div
-      className="inline-flex items-center overflow-hidden border border-line text-xs font-bold uppercase tracking-[0.12em]"
-      role="group"
-      aria-label="Language"
-    >
-      {locales.map((code) => {
-        const active = locale === code;
-        const href = `/${code}${rest}`;
-        const label = code === "en" ? labels.english : labels.chinese;
-        return (
-          <Link
-            key={code}
-            href={href}
-            hrefLang={code === "zh" ? "zh-CN" : "en"}
-            className={`px-2.5 py-1.5 transition ${
-              active ? "bg-yellow text-ink" : "bg-transparent text-muted hover:text-yellow"
-            }`}
-          >
-            {label}
-          </Link>
-        );
-      })}
-    </div>
+    <label className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-muted">
+      <span className="sr-only">Language</span>
+      <select
+        value={locale}
+        aria-label="Language"
+        className="max-w-[11rem] cursor-pointer border border-line bg-surface px-2 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-foreground outline-none transition hover:border-yellow focus:border-yellow"
+        onChange={(e) => {
+          const next = e.target.value as Locale;
+          router.push(`/${next}${rest}`);
+        }}
+      >
+        {locales.map((code) => (
+          <option key={code} value={code}>
+            {localeLabels[code]}
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }

@@ -41,13 +41,16 @@ body {
     sans-serif;
 }
 
-.font-zh {
-  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC",
-    var(--font-body), system-ui, sans-serif;
+.font-zh,
+.font-cjk {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans Thai",
+    "Thonburi", "Tahoma", "Source Han Sans SC", var(--font-body), system-ui, sans-serif;
 }
 
-.font-zh .display {
-  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", var(--font-display), sans-serif;
+.font-zh .display,
+.font-cjk .display {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans Thai",
+    "Thonburi", "Tahoma", var(--font-display), sans-serif;
   letter-spacing: 0.04em;
   font-weight: 700;
 }

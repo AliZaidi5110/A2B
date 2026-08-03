@@ -7,6 +7,9 @@ function getPreferredLocale(request: NextRequest): Locale {
 
   const header = request.headers.get("accept-language") ?? "";
   if (/(^|,)\s*zh\b/i.test(header)) return "zh";
+  if (/(^|,)\s*id\b/i.test(header)) return "id";
+  if (/(^|,)\s*ms\b/i.test(header)) return "ms";
+  if (/(^|,)\s*th\b/i.test(header)) return "th";
   return defaultLocale;
 }
 
