@@ -53,12 +53,12 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <span className="display text-4xl text-yellow transition group-hover:text-yellow-dark">
             {siteConfig.shortName}
           </span>
-          <span className="hidden text-xs font-semibold uppercase tracking-[0.2em] text-muted sm:inline">
+          <span className="hidden text-xs font-semibold uppercase tracking-[0.2em] text-muted lg:inline">
             {dict.common.brandSub}
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 xl:flex">
+        <nav className="hidden items-center gap-4 lg:flex xl:gap-6">
           {navKeys.map((item) => {
             const href = localizedPath(locale, item.href);
             const active = pathname === href;
@@ -66,7 +66,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <Link
                 key={item.key}
                 href={href}
-                className={`text-sm font-semibold uppercase tracking-[0.14em] transition ${
+                className={`text-sm font-semibold uppercase tracking-[0.12em] transition ${
                   active ? "text-yellow" : "text-foreground/80 hover:text-yellow"
                 }`}
               >
@@ -87,7 +87,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             type="button"
             aria-label={dict.common.menu}
             aria-expanded={open}
-            className="btn btn-ghost px-3 xl:hidden"
+            className="btn btn-ghost px-3 lg:hidden"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? dict.common.close : dict.common.menu}
@@ -96,7 +96,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       </div>
 
       {open ? (
-        <div className="border-t border-line bg-surface xl:hidden">
+        <div className="border-t border-line bg-surface lg:hidden">
           <nav className="container-site flex flex-col gap-1 py-4">
             <div className="mb-2 px-3">
               <LanguageSwitcher locale={locale} />
