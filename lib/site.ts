@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "A2B Chauffeur Tour Services",
   shortName: "A2B",
-  tagline: "Book Your Luxury Chauffeur Across the UK",
+  tagline: "Book Your Luxury Chauffeur and Tour Across the Road",
   description:
     "A2B Chauffeur Tour Services provides luxury Mercedes chauffeur and tour travel across the United Kingdom. Trained drivers, efficient routes, and bespoke VIP service.",
   url: "https://www.a2bchauffeur-tours.com",

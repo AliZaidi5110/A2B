@@ -69,7 +69,7 @@ export const ms: Dictionary = {
   },
   hero: {
     eyebrow: "A2B Chauffeur Tour Services",
-    tagline: "Tempah Chauffeur Mewah Anda di Seluruh UK",
+    tagline: "Tempah Chauffeur dan Lawatan Mewah Anda di Persiaran",
     support:
       "28 tahun pengalaman chauffeur dan lawatan. Chauffeur UK terlatih. Laluan cekap. Mercedes mewah dan kenderaan VIP — tempah melalui telefon atau WeChat bila-bila masa.",
     call: "Telefon",

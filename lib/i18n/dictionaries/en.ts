@@ -67,7 +67,7 @@ export const en = {
   },
   hero: {
     eyebrow: "A2B Chauffeur Tour Services",
-    tagline: "Book Your Luxury Chauffeur Across the UK",
+    tagline: "Book Your Luxury Chauffeur and Tour Across the Road",
     support:
       "28 years of chauffeur and tour experience. Trained UK chauffeurs. Efficient routes. Luxury Mercedes and VIP vehicles — book by phone or WeChat anytime.",
     call: "Call",
