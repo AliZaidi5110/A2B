@@ -47,10 +47,13 @@ export const th: Dictionary = {
     wechatId: "WeChat ID",
     line: "LINE",
     lineHint: "เพิ่มใน LINE (ไต้หวัน)",
+    whatsapp: "WhatsApp",
+    whatsappHint: "ส่งข้อความทาง WhatsApp",
     available: "พร้อมบริการ",
     companyNo: "เลขที่บริษัท",
     rights: "สงวนลิขสิทธิ์",
     language: "ภาษา",
+    selectLanguage: "เลือกภาษา",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",
@@ -233,7 +236,7 @@ export const th: Dictionary = {
     success: "ขอบคุณ เราได้รับแบบสอบถามของคุณแล้วและจะตอบกลับในเร็วๆ นี้",
     error: "เกิดข้อผิดพลาด",
     prefer:
-      "ต้องการจองทันที? โทร {phone}, WeChat {wechat} หรือ LINE {line}",
+      "ต้องการจองทันที? โทร {phone}, WhatsApp {whatsapp}, WeChat {wechat} หรือ LINE {line}",
   },
   drivers: {
     eyebrow: "คนขับผู้เชี่ยวชาญของเรา",
@@ -275,7 +278,7 @@ export const th: Dictionary = {
   faqs: [
     {
       q: "จองรถเช่าพร้อมคนขับได้อย่างไร?",
-      a: "โทร +44 7938 994070 ส่งข้อความทาง WeChat (kp61pke) หรือ LINE (+44 7938 994070) หรือส่งแบบสอบถามผ่านแบบฟอร์มติดต่อ",
+      a: "โทร +44 7938 994070 ส่งข้อความทาง WhatsApp (+44 7938 994070) WeChat (kp61pke) หรือ LINE (+44 7938 994070) หรือส่งแบบสอบถามผ่านแบบฟอร์มติดต่อ",
     },
     {
       q: "มีรถอะไรบ้าง?",
@@ -293,7 +296,7 @@ export const th: Dictionary = {
   contact: {
     pageTitle: "ติดต่อเรา",
     pageSubtitle:
-      "หากต้องการจอง: โทรหาเรา ส่งข้อความทาง WeChat หรือ LINE หรือฝากข้อความด้านล่าง",
+      "หากต้องการจอง: โทรหาเรา ส่งข้อความทาง WhatsApp WeChat หรือ LINE หรือฝากข้อความด้านล่าง",
     callUs: "โทรหาเราได้ตลอด 24 ชั่วโมง",
     office: "สำนักงาน",
     formTitle: "ส่งข้อความ",
@@ -301,7 +304,7 @@ export const th: Dictionary = {
     openingHours: "เวลาทำการ:",
     hoursValue: "24/7",
     hoursBody:
-      "คนขับของเราพร้อมบริการตลอดเวลาทั่วสหราชอาณาจักร โทร WeChat LINE หรือส่งข้อความ — เราเลือกเส้นทางที่มีประสิทธิภาพที่สุดทุกการเดินทาง",
+      "คนขับของเราพร้อมบริการตลอดเวลาทั่วสหราชอาณาจักร โทร WhatsApp WeChat LINE หรือส่งข้อความ — เราเลือกเส้นทางที่มีประสิทธิภาพที่สุดทุกการเดินทาง",
     social: "โซเชียล:",
     getTaxiOnline: "จองออนไลน์",
     yourName: "ชื่อของคุณ *",

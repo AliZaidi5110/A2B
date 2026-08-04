@@ -35,7 +35,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </p>
           <div className="flex items-center gap-3 sm:gap-4">
             <SocialLinks compact className="hidden sm:flex" />
-            <LanguageSwitcher locale={locale} />
+            <LanguageSwitcher locale={locale} label={dict.common.selectLanguage} />
             <a
               href={`tel:${siteConfig.phoneTel}`}
               className="font-display text-lg tracking-wide text-foreground transition hover:text-yellow"
@@ -101,7 +101,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         <div className="border-t border-line bg-surface lg:hidden">
           <nav className="container-site flex flex-col gap-1 py-4">
             <div className="mb-2 px-3">
-              <LanguageSwitcher locale={locale} />
+              <LanguageSwitcher locale={locale} label={dict.common.selectLanguage} />
             </div>
             {navKeys.map((item) => (
               <Link

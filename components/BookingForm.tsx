@@ -53,6 +53,7 @@ export function BookingForm({
 
   const prefer = dict.booking.prefer
     .replace("{phone}", siteConfig.phoneDisplay)
+    .replace("{whatsapp}", siteConfig.whatsappDisplay)
     .replace("{wechat}", siteConfig.wechat)
     .replace("{line}", siteConfig.lineDisplay);
 

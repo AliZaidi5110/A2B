@@ -32,6 +32,14 @@ function ChatIcon() {
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
+      <path d="M12.04 2.1A9.9 9.9 0 002.2 11.9a9.8 9.8 0 001.3 4.9L2.1 22l5.3-1.4a9.9 9.9 0 004.6 1.2h0a9.9 9.9 0 009.9-9.9 9.9 9.9 0 00-9.86-9.8zm5.8 14.1c-.24.68-1.4 1.25-1.94 1.33-.5.07-1.13.1-1.82-.11a8.3 8.3 0 01-2.57-1.2 9.7 9.7 0 01-3.5-3.6c-.5-.75-.95-1.7-.95-2.57 0-.85.46-1.6 1.25-1.85.22-.07.44-.04.6.03.16.07.4.36.5.66.1.3.34 1.05.37 1.13.04.08.02.2-.06.3l-.34.44c-.1.1-.2.22-.08.43.12.21.53.9 1.15 1.46a6.2 6.2 0 002.05 1.2c.2.07.32.06.43-.08l.5-.6c.1-.13.25-.17.41-.1.16.07 1.03.49 1.2.58.18.09.3.13.34.2.05.08.05.45-.2 1.13z" />
+    </svg>
+  );
+}
+
 function LineIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
@@ -86,6 +94,29 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
                   </span>
                   <span className="mt-1 block font-display text-2xl tracking-wide">
                     {siteConfig.phoneDisplay}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={siteConfig.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-4 text-foreground transition hover:text-yellow"
+              >
+                <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow transition group-hover:bg-yellow group-hover:text-ink">
+                  <WhatsAppIcon />
+                </span>
+                <span>
+                  <span className="block text-xs font-bold uppercase tracking-[0.16em] text-muted">
+                    {dict.common.whatsapp}
+                  </span>
+                  <span className="mt-1 block font-display text-2xl tracking-wide">
+                    {siteConfig.whatsappDisplay}
+                  </span>
+                  <span className="mt-1 block text-sm text-muted">
+                    {dict.common.whatsappHint}
                   </span>
                 </span>
               </a>

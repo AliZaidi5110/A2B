@@ -32,6 +32,17 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             {siteConfig.phoneDisplay}
           </a>
           <p className="mt-2 text-sm text-muted">
+            {dict.common.whatsapp}:{" "}
+            <a
+              href={siteConfig.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-yellow"
+            >
+              {siteConfig.whatsappDisplay}
+            </a>
+          </p>
+          <p className="mt-1 text-sm text-muted">
             {dict.common.wechat}: {siteConfig.wechat}
           </p>
           <p className="mt-1 text-sm text-muted">

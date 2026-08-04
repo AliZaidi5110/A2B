@@ -13,6 +13,8 @@ export const siteConfig = {
   lineTel: "+447938994070",
   /** Opens phone dialer; add the same number as a LINE contact in Taiwan */
   lineHref: "https://line.me/R/ti/p/~447938994070",
+  whatsappDisplay: "+44 7938 994070",
+  whatsappHref: "https://wa.me/447938994070",
   email: "",
   address: {
     street: "71-75 Shelton Street, Covent Garden",

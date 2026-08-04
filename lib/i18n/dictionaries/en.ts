@@ -45,10 +45,13 @@ export const en = {
     wechatId: "WeChat ID",
     line: "LINE",
     lineHint: "Add on LINE (Taiwan)",
+    whatsapp: "WhatsApp",
+    whatsappHint: "Message us on WhatsApp",
     available: "Available",
     companyNo: "Company No.",
     rights: "All rights reserved.",
     language: "Language",
+    selectLanguage: "Select language",
     english: "English",
     chinese: "中文",
     indonesian: "Bahasa Indonesia",
@@ -231,7 +234,7 @@ export const en = {
     success: "Thank you. We received your enquiry and will respond shortly.",
     error: "Something went wrong.",
     prefer:
-      "Prefer instant booking? Call {phone}, WeChat {wechat}, or LINE {line}.",
+      "Prefer instant booking? Call {phone}, WhatsApp {whatsapp}, WeChat {wechat}, or LINE {line}.",
   },
   drivers: {
     eyebrow: "Our Expert Drivers",
@@ -273,7 +276,7 @@ export const en = {
   faqs: [
     {
       q: "How do I book a chauffeur?",
-      a: "Call +44 7938 994070, message us on WeChat (kp61pke) or LINE (+44 7938 994070), or send an enquiry through the contact form.",
+      a: "Call +44 7938 994070, message us on WhatsApp (+44 7938 994070), WeChat (kp61pke) or LINE (+44 7938 994070), or send an enquiry through the contact form.",
     },
     {
       q: "Which vehicles are available?",
@@ -291,7 +294,7 @@ export const en = {
   contact: {
     pageTitle: "Contact Us",
     pageSubtitle:
-      "To make an order: call us, message on WeChat or LINE, or leave a message below.",
+      "To make an order: call us, message on WhatsApp, WeChat or LINE, or leave a message below.",
     callUs: "Call Us 24/7",
     office: "Office",
     formTitle: "Send Message",
@@ -299,7 +302,7 @@ export const en = {
     openingHours: "Opening Hours:",
     hoursValue: "24/7",
     hoursBody:
-      "Our chauffeurs are available around the clock across the United Kingdom. Call, WeChat, LINE, or send a message — we take the most efficient route for every journey.",
+      "Our chauffeurs are available around the clock across the United Kingdom. Call, WhatsApp, WeChat, LINE, or send a message — we take the most efficient route for every journey.",
     social: "Social:",
     getTaxiOnline: "Book Online",
     yourName: "Your Name *",

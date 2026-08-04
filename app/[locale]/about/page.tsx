@@ -146,6 +146,16 @@ export default async function AboutPage({
               <br />
               {dict.common.wechat} {siteConfig.wechat}
               <br />
+              {dict.common.whatsapp}{" "}
+              <a
+                href={siteConfig.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow"
+              >
+                {siteConfig.whatsappDisplay}
+              </a>
+              <br />
               {dict.common.line}{" "}
               <a
                 href={siteConfig.lineHref}

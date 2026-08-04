@@ -52,6 +52,14 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <a href={`tel:${siteConfig.phoneTel}`} className="btn btn-primary">
                   {dict.hero.call} {siteConfig.phoneDisplay}
                 </a>
+                <a
+                  href={siteConfig.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost"
+                >
+                  {dict.common.whatsapp} {siteConfig.whatsappDisplay}
+                </a>
                 <Link href={localizedPath(locale, "/contact")} className="btn btn-ghost">
                   {dict.common.wechat} {siteConfig.wechat}
                 </Link>
