@@ -24,6 +24,7 @@ export const siteConfig = {
     "https://wa.me/447938994070?text=Hi%20A2B%2C%20I%27d%20like%20a%20free%20quote%20for%20chauffeur%20%26%20tour%20services.%20Please%20message%20me.",
   promoVideo: {
     src: "/videos/a2b-promo.mp4",
+    thumbnail: "/images/video/promo-thumb.png",
     embedUrl:
       "https://drive.google.com/file/d/18WmFVo8GzVP0Kg1DuGz_m3FGqyLS1phL/preview",
     driveUrl:

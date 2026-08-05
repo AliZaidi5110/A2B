@@ -93,6 +93,7 @@ export const en = {
     caption: "A2B Chauffeur Tour Services promotional video",
     fallback: "Your browser does not support video playback.",
     openExternal: "Open video in new tab →",
+    playLabel: "Play promo video",
   },
   services: {
     eyebrow: "Our Services",

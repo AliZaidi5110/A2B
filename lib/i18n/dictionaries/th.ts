@@ -95,6 +95,7 @@ export const th: Dictionary = {
     caption: "วิดีโอโปรโมท A2B Chauffeur Tour Services",
     fallback: "เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ",
     openExternal: "เปิดวิดีโอในแท็บใหม่ →",
+    playLabel: "เล่นวิดีโอโปรโมท",
   },
   services: {
     eyebrow: "บริการของเรา",

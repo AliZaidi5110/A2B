@@ -95,6 +95,7 @@ export const ms: Dictionary = {
     caption: "Video promosi A2B Chauffeur Tour Services",
     fallback: "Pelayar anda tidak menyokong main balik video.",
     openExternal: "Buka video dalam tab baharu →",
+    playLabel: "Mainkan video promo",
   },
   services: {
     eyebrow: "Perkhidmatan Kami",

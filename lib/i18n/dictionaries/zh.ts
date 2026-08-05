@@ -92,6 +92,7 @@ export const zh: Dictionary = {
     caption: "A2B 专车旅游服务宣传视频",
     fallback: "您的浏览器不支持视频播放。",
     openExternal: "在新标签页中打开视频 →",
+    playLabel: "播放宣传视频",
   },
   services: {
     eyebrow: "我们的服务",
