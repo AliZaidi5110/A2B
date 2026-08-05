@@ -30,7 +30,8 @@ export const id: Dictionary = {
     contact: "Kontak",
   },
   common: {
-    brandSub: "Chauffeur Tours",
+    brandSub: "Chauffeur & Tour Services",
+    brandLine: "No1 Chauffeur & Tour Services UK",
     bookNow: "Pesan Sekarang",
     bookYourRide: "Pesan Perjalanan Anda",
     callAnytime: "Hubungi Kapan Saja",
@@ -62,7 +63,10 @@ export const id: Dictionary = {
   },
   header: {
     callLabel: "Hubungi Kapan Saja",
-    messageUs: "Hubungi kami sekarang",
+    messageUs: "Pesan saya sekarang untuk penawaran gratis",
+    tapMessage: "Ketuk dan pesan saya sekarang untuk penawaran gratis",
+    dmNow: "Buka chat",
+    freeQuote: "Penawaran Gratis via WhatsApp",
   },
   footer: {
     blurb:

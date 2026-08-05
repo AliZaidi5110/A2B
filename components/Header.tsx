@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -48,17 +49,27 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         </div>
       </div>
 
-      <div className="container-site flex items-center justify-between gap-4 py-4">
+      <div className="container-site flex items-center justify-between gap-4 py-3">
         <Link
           href={localizedPath(locale)}
-          className="group flex items-baseline gap-2"
+          className="group flex items-center gap-3"
           onClick={() => setOpen(false)}
         >
-          <span className="display text-4xl text-yellow transition group-hover:text-yellow-dark">
-            {siteConfig.shortName}
-          </span>
-          <span className="hidden text-xs font-semibold uppercase tracking-[0.2em] text-muted lg:inline">
-            {dict.common.brandSub}
+          <Image
+            src={siteConfig.logo}
+            alt={siteConfig.name}
+            width={56}
+            height={56}
+            className="h-12 w-12 rounded-full object-cover ring-1 ring-yellow/40 sm:h-14 sm:w-14"
+            priority
+          />
+          <span className="flex min-w-0 flex-col">
+            <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-yellow sm:text-xs">
+              {dict.common.brandSub}
+            </span>
+            <span className="text-sm font-semibold leading-tight text-foreground sm:text-base">
+              {dict.common.brandLine}
+            </span>
           </span>
         </Link>
 
@@ -80,13 +91,15 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           })}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Link
-            href={localizedPath(locale, "/contact")}
+        <div className="flex items-center gap-2 sm:gap-3">
+          <a
+            href={siteConfig.whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary hidden sm:inline-flex"
           >
-            {dict.common.bookNow}
-          </Link>
+            {dict.header.freeQuote}
+          </a>
           <button
             type="button"
             aria-label={dict.common.menu}
@@ -115,13 +128,15 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 {dict.nav[item.key]}
               </Link>
             ))}
-            <Link
-              href={localizedPath(locale, "/contact")}
+            <a
+              href={siteConfig.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="btn btn-primary mt-2"
             >
-              {dict.common.bookNow}
-            </Link>
+              {dict.header.freeQuote}
+            </a>
           </nav>
         </div>
       ) : null}

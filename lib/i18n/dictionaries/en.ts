@@ -28,7 +28,8 @@ export const en = {
     contact: "Contact",
   },
   common: {
-    brandSub: "Chauffeur Tours",
+    brandSub: "Chauffeur & Tour Services",
+    brandLine: "No1 Chauffeur & Tour Services UK",
     bookNow: "Book Now",
     bookYourRide: "Book Your Ride",
     callAnytime: "Call Anytime",
@@ -60,7 +61,10 @@ export const en = {
   },
   header: {
     callLabel: "Call Anytime",
-    messageUs: "Message us instantly",
+    messageUs: "Message me now for a free quote",
+    tapMessage: "Tap and message me now for a free quote",
+    dmNow: "Open chat",
+    freeQuote: "Free Quote on WhatsApp",
   },
   footer: {
     blurb:

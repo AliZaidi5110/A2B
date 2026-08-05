@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SocialLinks } from "@/components/SocialLinks";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
@@ -18,8 +19,22 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <footer className="border-t border-line bg-surface">
       <div className="container-site grid gap-10 section-pad md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
-          <Link href={localizedPath(locale)} className="display text-4xl text-yellow">
-            {siteConfig.shortName}
+          <Link href={localizedPath(locale)} className="inline-flex items-center gap-3">
+            <Image
+              src={siteConfig.logo}
+              alt={siteConfig.name}
+              width={64}
+              height={64}
+              className="h-14 w-14 rounded-full object-cover ring-1 ring-yellow/40"
+            />
+            <span className="flex flex-col">
+              <span className="text-xs font-bold uppercase tracking-[0.14em] text-yellow">
+                {dict.common.brandSub}
+              </span>
+              <span className="text-sm font-semibold text-foreground">
+                {dict.common.brandLine}
+              </span>
+            </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">{dict.footer.blurb}</p>
           <p className="mt-3 text-sm font-bold text-yellow">

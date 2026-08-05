@@ -30,7 +30,8 @@ export const th: Dictionary = {
     contact: "ติดต่อ",
   },
   common: {
-    brandSub: "Chauffeur Tours",
+    brandSub: "Chauffeur & Tour Services",
+    brandLine: "No1 Chauffeur & Tour Services UK",
     bookNow: "จองเลย",
     bookYourRide: "จองรถของคุณ",
     callAnytime: "โทรได้ตลอดเวลา",
@@ -62,7 +63,10 @@ export const th: Dictionary = {
   },
   header: {
     callLabel: "โทรได้ตลอดเวลา",
-    messageUs: "ติดต่อเราได้ทันที",
+    messageUs: "ส่งข้อความหาฉันตอนนี้เพื่อขอใบเสนอราคาฟรี",
+    tapMessage: "แตะแล้วส่งข้อความหาฉันตอนนี้เพื่อขอใบเสนอราคาฟรี",
+    dmNow: "เปิดแชท",
+    freeQuote: "ใบเสนอราคาฟรีทาง WhatsApp",
   },
   footer: {
     blurb:

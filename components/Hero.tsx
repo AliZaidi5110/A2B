@@ -34,6 +34,24 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         <div className="grid w-full items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="max-w-3xl">
             <SlideIn immediate delay={80}>
+              <div className="mb-4 flex items-center gap-4">
+                <Image
+                  src={siteConfig.logo}
+                  alt={siteConfig.name}
+                  width={88}
+                  height={88}
+                  className="h-20 w-20 rounded-full object-cover ring-2 ring-yellow/50 sm:h-24 sm:w-24"
+                  priority
+                />
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-yellow">
+                    {dict.common.brandSub}
+                  </p>
+                  <p className="mt-1 text-base font-semibold text-foreground sm:text-lg">
+                    {dict.common.brandLine}
+                  </p>
+                </div>
+              </div>
               <p className="eyebrow">{dict.hero.eyebrow}</p>
             </SlideIn>
             <SlideIn immediate delay={220}>
@@ -48,13 +66,32 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               </p>
             </SlideIn>
             <SlideIn immediate delay={520}>
-              <div className="mt-9 flex flex-wrap gap-3">
-                <a href={`tel:${siteConfig.phoneTel}`} className="btn btn-primary">
-                  {dict.hero.call} {siteConfig.phoneDisplay}
+              <p className="mt-6 text-sm font-bold uppercase tracking-[0.14em] text-yellow">
+                {dict.header.tapMessage}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href={siteConfig.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  {dict.common.whatsapp} · {dict.header.dmNow}
                 </a>
-                <Link href={localizedPath(locale, "/contact")} className="btn btn-ghost">
-                  {dict.common.bookNow}
+                <Link
+                  href={`${localizedPath(locale, "/contact")}#wechat`}
+                  className="btn btn-ghost"
+                >
+                  {dict.common.wechat} {siteConfig.wechat}
                 </Link>
+                <a
+                  href={siteConfig.lineHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-ghost"
+                >
+                  {dict.common.line} · {dict.header.dmNow}
+                </a>
               </div>
             </SlideIn>
           </div>

@@ -5,11 +5,16 @@ import { siteConfig } from "@/lib/site";
 
 export function ContactQuickBar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
-    <div className="contact-quick-bar border-b border-line bg-surface-2">
-      <div className="container-site flex flex-col gap-2 py-2.5 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-yellow sm:text-xs">
-          {dict.header.messageUs}
-        </p>
+    <div className="contact-quick-bar border-b border-yellow/30 bg-surface-2">
+      <div className="container-site flex flex-col gap-2.5 py-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="min-w-0">
+          <p className="text-[0.72rem] font-bold uppercase tracking-[0.16em] text-yellow sm:text-xs">
+            {dict.header.tapMessage}
+          </p>
+          <p className="mt-0.5 text-[0.65rem] text-muted sm:text-xs">
+            {dict.header.messageUs}
+          </p>
+        </div>
         <div className="flex flex-wrap gap-2">
           <a
             href={siteConfig.whatsappHref}
@@ -18,7 +23,7 @@ export function ContactQuickBar({ locale, dict }: { locale: Locale; dict: Dictio
             className="contact-pill contact-pill--whatsapp"
           >
             {dict.common.whatsapp}
-            <span className="contact-pill-value">{siteConfig.whatsappDisplay}</span>
+            <span className="contact-pill-value">{dict.header.dmNow}</span>
           </a>
           <Link
             href={`${localizedPath(locale, "/contact")}#wechat`}
@@ -34,7 +39,7 @@ export function ContactQuickBar({ locale, dict }: { locale: Locale; dict: Dictio
             className="contact-pill"
           >
             {dict.common.line}
-            <span className="contact-pill-value">{siteConfig.lineDisplay}</span>
+            <span className="contact-pill-value">{dict.header.dmNow}</span>
           </a>
         </div>
       </div>

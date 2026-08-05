@@ -30,7 +30,8 @@ export const zh: Dictionary = {
     contact: "联系",
   },
   common: {
-    brandSub: "专车旅游",
+    brandSub: "专车与旅游服务",
+    brandLine: "英国 No.1 专车与旅游服务",
     bookNow: "立即预订",
     bookYourRide: "预订专车",
     callAnytime: "随时致电",
@@ -62,7 +63,10 @@ export const zh: Dictionary = {
   },
   header: {
     callLabel: "随时致电",
-    messageUs: "即时联系我们",
+    messageUs: "立即留言，获取免费报价",
+    tapMessage: "点击并留言，立即获取免费报价",
+    dmNow: "打开聊天",
+    freeQuote: "WhatsApp 免费报价",
   },
   footer: {
     blurb: "英国全境豪华专车与旅游服务。立即预订您的定制出行。",

@@ -336,6 +336,14 @@ body {
   color: var(--ink);
 }
 
+.contact-pill--ghost {
+  opacity: 0.9;
+}
+
+.contact-pill--whatsapp {
+  border-color: rgba(37, 211, 102, 0.45);
+}
+
 .contact-pill--whatsapp:hover {
   border-color: #25d366;
   background: #25d366;
