@@ -296,6 +296,81 @@ body {
   animation: pulse-line 2.4s ease-in-out infinite;
 }
 
+.contact-quick-bar {
+  position: relative;
+  z-index: 51;
+}
+
+.contact-pill {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  border: 1px solid var(--line);
+  background: rgba(20, 20, 22, 0.95);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease,
+    transform 180ms ease;
+}
+
+.contact-pill:hover {
+  border-color: var(--yellow);
+  background: var(--yellow);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.contact-pill-value {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--muted);
+}
+
+.contact-pill:hover .contact-pill-value {
+  color: var(--ink);
+}
+
+.contact-pill--whatsapp:hover {
+  border-color: #25d366;
+  background: #25d366;
+  color: #fff;
+}
+
+.contact-pill--whatsapp:hover .contact-pill-value {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.video-frame {
+  position: relative;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  padding: 0.75rem;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+.video-frame-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--yellow), rgba(245, 197, 24, 0.35));
+}
+
+.video-player {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: cover;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-rise,
   .animate-rise-delay,

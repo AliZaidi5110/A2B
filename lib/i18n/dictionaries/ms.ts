@@ -62,6 +62,7 @@ export const ms: Dictionary = {
   },
   header: {
     callLabel: "Hubungi Bila-bila Masa",
+    messageUs: "Hubungi kami dengan segera",
   },
   footer: {
     blurb:
@@ -77,6 +78,14 @@ export const ms: Dictionary = {
       "28 tahun pengalaman chauffeur dan lawatan. Chauffeur UK terlatih. Laluan cekap. Mercedes mewah dan kenderaan VIP — tempah melalui telefon atau WeChat bila-bila masa.",
     call: "Telefon",
     imageAlt: "Kereta chauffeur mewah sedia untuk perjalanan di UK",
+  },
+  video: {
+    eyebrow: "Tonton A2B",
+    title: "Pengalaman Chauffeur & Lawatan Mewah",
+    body:
+      "Lihat bagaimana A2B menyampaikan perjalanan Mercedes chauffeur yang elegan dan lawatan UK khas — dari pemindahan lapangan terbang hingga lawatan persendirian.",
+    caption: "Video promosi A2B Chauffeur Tour Services",
+    fallback: "Pelayar anda tidak menyokong main balik video.",
   },
   services: {
     eyebrow: "Perkhidmatan Kami",

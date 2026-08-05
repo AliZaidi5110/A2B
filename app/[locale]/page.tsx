@@ -4,6 +4,7 @@ import { BookingBand } from "@/components/BookingBand";
 import { Drivers } from "@/components/Drivers";
 import { FleetGrid } from "@/components/FleetGrid";
 import { Hero } from "@/components/Hero";
+import { PromoVideo } from "@/components/PromoVideo";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Stats } from "@/components/Stats";
 import { Testimonials } from "@/components/Testimonials";
@@ -47,6 +48,7 @@ export default async function HomePage({
   return (
     <>
       <Hero locale={locale} dict={dict} />
+      <PromoVideo dict={dict} />
       <ServicesGrid locale={locale} dict={dict} limit={3} />
       <AboutSection locale={locale} dict={dict} />
       <ToursGrid locale={locale} dict={dict} limit={2} />

@@ -62,6 +62,7 @@ export const id: Dictionary = {
   },
   header: {
     callLabel: "Hubungi Kapan Saja",
+    messageUs: "Hubungi kami sekarang",
   },
   footer: {
     blurb:
@@ -77,6 +78,14 @@ export const id: Dictionary = {
       "28 tahun pengalaman chauffeur dan tur. Chauffeur Inggris terlatih. Rute efisien. Mercedes mewah dan kendaraan VIP — pesan lewat telepon atau WeChat kapan saja.",
     call: "Telepon",
     imageAlt: "Mobil chauffeur mewah siap untuk perjalanan di Inggris",
+  },
+  video: {
+    eyebrow: "Tonton A2B",
+    title: "Pengalaman Chauffeur & Tur Mewah",
+    body:
+      "Lihat bagaimana A2B menghadirkan perjalanan Mercedes chauffeur yang elegan dan tur UK khusus — dari transfer bandara hingga wisata pribadi.",
+    caption: "Video promosi A2B Chauffeur Tour Services",
+    fallback: "Browser Anda tidak mendukung pemutaran video.",
   },
   services: {
     eyebrow: "Layanan Kami",

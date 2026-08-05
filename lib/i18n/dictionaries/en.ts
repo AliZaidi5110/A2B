@@ -60,6 +60,7 @@ export const en = {
   },
   header: {
     callLabel: "Call Anytime",
+    messageUs: "Message us instantly",
   },
   footer: {
     blurb:
@@ -75,6 +76,14 @@ export const en = {
       "28 years of chauffeur and tour experience. Trained UK chauffeurs. Efficient routes. Luxury Mercedes and VIP vehicles — book by phone or WeChat anytime.",
     call: "Call",
     imageAlt: "Luxury chauffeur car ready for UK travel",
+  },
+  video: {
+    eyebrow: "Watch A2B",
+    title: "Luxury Chauffeur & Tour Experience",
+    body:
+      "See how A2B delivers polished Mercedes chauffeur travel and bespoke UK tours — from airport transfers to private sightseeing.",
+    caption: "A2B Chauffeur Tour Services promotional video",
+    fallback: "Your browser does not support video playback.",
   },
   services: {
     eyebrow: "Our Services",

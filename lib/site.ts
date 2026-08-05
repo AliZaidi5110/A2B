@@ -15,6 +15,11 @@ export const siteConfig = {
   lineHref: "https://line.me/R/ti/p/~447938994070",
   whatsappDisplay: "+44 7938 994070",
   whatsappHref: "https://wa.me/447938994070",
+  promoVideo: {
+    src: "/videos/a2b-promo.mp4",
+    driveUrl:
+      "https://drive.google.com/file/d/18WmFVo8GzVP0Kg1DuGz_m3FGqyLS1phL/view",
+  },
   email: "",
   address: {
     street: "71-75 Shelton Street, Covent Garden",

@@ -62,6 +62,7 @@ export const zh: Dictionary = {
   },
   header: {
     callLabel: "随时致电",
+    messageUs: "即时联系我们",
   },
   footer: {
     blurb: "英国全境豪华专车与旅游服务。立即预订您的定制出行。",
@@ -76,6 +77,13 @@ export const zh: Dictionary = {
       "28年专车与观光经验。训练有素的英国司机，高效路线，豪华奔驰与VIP车辆 — 电话或微信随时预订。",
     call: "致电",
     imageAlt: "英国豪华专车出行",
+  },
+  video: {
+    eyebrow: "观看 A2B",
+    title: "豪华专车与观光体验",
+    body: "了解 A2B 如何提供精致的奔驰专车出行与定制英国观光 — 从机场接送到私人游览。",
+    caption: "A2B 专车旅游服务宣传视频",
+    fallback: "您的浏览器不支持视频播放。",
   },
   services: {
     eyebrow: "我们的服务",

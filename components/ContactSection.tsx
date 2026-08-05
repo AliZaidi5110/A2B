@@ -121,7 +121,7 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
                 </span>
               </a>
             </li>
-            <li>
+            <li id="wechat">
               <div className="flex items-start gap-4 text-foreground">
                 <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow">
                   <ChatIcon />
