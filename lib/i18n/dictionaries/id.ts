@@ -67,6 +67,10 @@ export const id: Dictionary = {
     tapMessage: "Ketuk dan pesan saya sekarang untuk penawaran gratis",
     dmNow: "Buka chat",
     freeQuote: "Penawaran Gratis via WhatsApp",
+    wechatCopy: "Salin ID WeChat",
+    wechatOpenApp: "Buka aplikasi WeChat",
+    wechatHint:
+      "WeChat tidak punya tautan chat web. ID WeChat sudah disalin — buka WeChat, ketuk Tambah Teman, lalu cari kp61pke untuk menghubungi kami.",
   },
   footer: {
     blurb:

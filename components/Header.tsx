@@ -26,7 +26,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-background/90 backdrop-blur-md">
-      <ContactQuickBar locale={locale} dict={dict} />
+      <ContactQuickBar dict={dict} />
       <div className="border-b border-line bg-surface">
         <div className="container-site flex flex-wrap items-center justify-between gap-3 py-2 text-sm text-muted">
           <p className="font-medium tracking-wide">

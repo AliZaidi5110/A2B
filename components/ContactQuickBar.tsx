@@ -1,9 +1,10 @@
-import Link from "next/link";
-import { localizedPath, type Locale } from "@/lib/i18n/config";
+"use client";
+
+import { WeChatOpenButton } from "@/components/WeChatOpenButton";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
 
-export function ContactQuickBar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+export function ContactQuickBar({ dict }: { dict: Dictionary }) {
   return (
     <div className="contact-quick-bar border-b border-yellow/30 bg-surface-2">
       <div className="container-site flex flex-col gap-2.5 py-3 sm:flex-row sm:items-center sm:justify-between">
@@ -25,13 +26,16 @@ export function ContactQuickBar({ locale, dict }: { locale: Locale; dict: Dictio
             {dict.common.whatsapp}
             <span className="contact-pill-value">{dict.header.dmNow}</span>
           </a>
-          <Link
-            href={`${localizedPath(locale, "/contact")}#wechat`}
-            className="contact-pill"
+          <WeChatOpenButton
+            className="contact-pill text-left"
+            copyLabel={dict.header.wechatCopy}
+            openAppLabel={dict.header.wechatOpenApp}
+            hint={dict.header.wechatHint}
+            closeLabel={dict.common.close}
           >
             {dict.common.wechat}
             <span className="contact-pill-value">{siteConfig.wechat}</span>
-          </Link>
+          </WeChatOpenButton>
           <a
             href={siteConfig.lineHref}
             target="_blank"

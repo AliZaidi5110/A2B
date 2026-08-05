@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { RotatingBadge } from "@/components/RotatingBadge";
 import { SlideIn } from "@/components/SlideIn";
-import { localizedPath, type Locale } from "@/lib/i18n/config";
+import { WeChatOpenButton } from "@/components/WeChatOpenButton";
+import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
 
@@ -78,12 +78,15 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 >
                   {dict.common.whatsapp} · {dict.header.dmNow}
                 </a>
-                <Link
-                  href={`${localizedPath(locale, "/contact")}#wechat`}
+                <WeChatOpenButton
                   className="btn btn-ghost"
+                  copyLabel={dict.header.wechatCopy}
+                  openAppLabel={dict.header.wechatOpenApp}
+                  hint={dict.header.wechatHint}
+                  closeLabel={dict.common.close}
                 >
                   {dict.common.wechat} {siteConfig.wechat}
-                </Link>
+                </WeChatOpenButton>
                 <a
                   href={siteConfig.lineHref}
                   target="_blank"

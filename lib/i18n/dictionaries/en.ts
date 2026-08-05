@@ -65,6 +65,10 @@ export const en = {
     tapMessage: "Tap and message me now for a free quote",
     dmNow: "Open chat",
     freeQuote: "Free Quote on WhatsApp",
+    wechatCopy: "Copy WeChat ID",
+    wechatOpenApp: "Open WeChat app",
+    wechatHint:
+      "WeChat has no web chat link. Your WeChat ID is copied — open WeChat, tap Add Friends, and search kp61pke to message us.",
   },
   footer: {
     blurb:

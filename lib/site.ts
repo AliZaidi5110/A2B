@@ -12,7 +12,7 @@ export const siteConfig = {
   phoneTel: "+447938994070",
   phoneRaw: "00447938994070",
   wechat: "kp61pke",
-  /** Opens WeChat chat when the app is installed (mobile); otherwise use contact page */
+  /** Opens WeChat app (mobile). Desktop browsers cannot open WeChat DMs like WhatsApp. */
   wechatHref: "weixin://dl/chat?kp61pke",
   lineDisplay: "+44 7938 994070",
   lineTel: "+447938994070",

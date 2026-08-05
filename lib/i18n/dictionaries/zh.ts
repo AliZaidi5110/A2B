@@ -67,6 +67,9 @@ export const zh: Dictionary = {
     tapMessage: "点击并留言，立即获取免费报价",
     dmNow: "打开聊天",
     freeQuote: "WhatsApp 免费报价",
+    wechatCopy: "复制微信号",
+    wechatOpenApp: "打开微信",
+    wechatHint: "微信无法像 WhatsApp 一样网页直连。微信号已复制 — 请打开微信，点击添加朋友，搜索 kp61pke 即可联系我们。",
   },
   footer: {
     blurb: "英国全境豪华专车与旅游服务。立即预订您的定制出行。",

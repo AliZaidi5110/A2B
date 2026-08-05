@@ -67,6 +67,10 @@ export const th: Dictionary = {
     tapMessage: "แตะแล้วส่งข้อความหาฉันตอนนี้เพื่อขอใบเสนอราคาฟรี",
     dmNow: "เปิดแชท",
     freeQuote: "ใบเสนอราคาฟรีทาง WhatsApp",
+    wechatCopy: "คัดลอก WeChat ID",
+    wechatOpenApp: "เปิดแอป WeChat",
+    wechatHint:
+      "WeChat ไม่มีลิงก์แชทบนเว็บ เราคัดลอก WeChat ID แล้ว — เปิด WeChat แตะเพิ่มเพื่อน แล้วค้นหา kp61pke เพื่อติดต่อเรา",
   },
   footer: {
     blurb:
