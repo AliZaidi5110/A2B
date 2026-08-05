@@ -24,11 +24,14 @@ export default async function LocaleLayout({
   const fontClass = locale === "zh" || locale === "th" ? "font-cjk" : "";
 
   return (
-    <div lang={localeHtmlLang[locale]} className={`flex min-h-full flex-1 flex-col ${fontClass}`}>
+    <div
+      lang={localeHtmlLang[locale]}
+      className={`flex min-h-full w-full max-w-full flex-1 flex-col overflow-x-clip ${fontClass}`}
+    >
       <LangAttr locale={locale} />
       <JsonLd />
       <Header locale={locale} dict={dict} />
-      <main className="flex-1">{children}</main>
+      <main className="w-full max-w-full flex-1 overflow-x-clip">{children}</main>
       <Footer locale={locale} dict={dict} />
     </div>
   );

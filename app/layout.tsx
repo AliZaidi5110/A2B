@@ -47,7 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="flex min-h-full w-full max-w-full flex-col overflow-x-clip antialiased">
+        {children}
+      </body>
     </html>
   );
 }

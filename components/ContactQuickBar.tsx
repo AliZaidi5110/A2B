@@ -6,13 +6,10 @@ import { siteConfig } from "@/lib/site";
 
 export function ContactQuickBar({ dict }: { dict: Dictionary }) {
   return (
-    <div className="contact-quick-bar border-b border-yellow/30 bg-surface-2">
-      <div className="container-site py-2.5 sm:py-3">
-        <p className="text-center text-[0.62rem] font-bold uppercase leading-snug tracking-[0.12em] text-yellow sm:text-left sm:text-xs sm:tracking-[0.16em]">
+    <div className="contact-quick-bar w-full max-w-full overflow-x-clip border-b border-yellow/30 bg-surface-2">
+      <div className="container-site py-2 sm:py-2.5">
+        <p className="text-center text-[0.58rem] font-bold uppercase leading-snug tracking-[0.08em] text-yellow sm:text-left sm:text-xs sm:tracking-[0.14em]">
           {dict.header.tapMessage}
-        </p>
-        <p className="mt-0.5 hidden text-xs text-muted sm:block">
-          {dict.header.messageUs}
         </p>
         <div className="contact-pill-row mt-2">
           <a
