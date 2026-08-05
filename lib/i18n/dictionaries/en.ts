@@ -84,6 +84,7 @@ export const en = {
       "See how A2B delivers polished Mercedes chauffeur travel and bespoke UK tours — from airport transfers to private sightseeing.",
     caption: "A2B Chauffeur Tour Services promotional video",
     fallback: "Your browser does not support video playback.",
+    openExternal: "Open video in new tab →",
   },
   services: {
     eyebrow: "Our Services",

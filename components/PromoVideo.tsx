@@ -8,7 +8,7 @@ export function PromoVideo({ dict }: { dict: Dictionary }) {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(245,197,24,0.06),transparent_65%)]" />
       <div className="container-site relative section-pad">
         <div className="mx-auto max-w-4xl text-center">
-          <SlideIn>
+          <SlideIn immediate>
             <p className="eyebrow justify-center">{dict.video.eyebrow}</p>
             <h2 className="display mt-4 text-5xl text-foreground sm:text-6xl md:text-7xl">
               {dict.video.title}
@@ -18,23 +18,32 @@ export function PromoVideo({ dict }: { dict: Dictionary }) {
             </p>
           </SlideIn>
 
-          <SlideIn delay={180}>
+          <SlideIn immediate delay={180}>
             <div className="video-frame mt-10">
               <div className="video-frame-accent" aria-hidden />
-              <video
-                className="video-player"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/images/hero/slide1.jpg"
-              >
-                <source src={siteConfig.promoVideo.src} type="video/mp4" />
-                {dict.video.fallback}
-              </video>
+              <div className="video-embed">
+                <iframe
+                  src={siteConfig.promoVideo.embedUrl}
+                  title={dict.video.caption}
+                  className="video-embed-frame"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
             <p className="mt-4 text-xs uppercase tracking-[0.16em] text-muted">
               {dict.video.caption}
             </p>
+            <a
+              href={siteConfig.promoVideo.driveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-sm text-yellow transition hover:text-foreground"
+            >
+              {dict.video.openExternal}
+            </a>
           </SlideIn>
         </div>
       </div>

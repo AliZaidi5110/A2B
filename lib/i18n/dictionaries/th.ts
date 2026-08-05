@@ -86,6 +86,7 @@ export const th: Dictionary = {
       "ดูว่า A2B มอบการเดินทาง Mercedes chauffeur ที่ประณีตและทัวร์ UK ตามความต้องการอย่างไร — ตั้งแต่รับส่งสนามบินจนถึงทัวร์ส่วนตัว",
     caption: "วิดีโอโปรโมท A2B Chauffeur Tour Services",
     fallback: "เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ",
+    openExternal: "เปิดวิดีโอในแท็บใหม่ →",
   },
   services: {
     eyebrow: "บริการของเรา",

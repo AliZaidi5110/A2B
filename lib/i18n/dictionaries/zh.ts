@@ -84,6 +84,7 @@ export const zh: Dictionary = {
     body: "了解 A2B 如何提供精致的奔驰专车出行与定制英国观光 — 从机场接送到私人游览。",
     caption: "A2B 专车旅游服务宣传视频",
     fallback: "您的浏览器不支持视频播放。",
+    openExternal: "在新标签页中打开视频 →",
   },
   services: {
     eyebrow: "我们的服务",

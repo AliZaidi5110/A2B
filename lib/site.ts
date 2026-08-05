@@ -17,6 +17,9 @@ export const siteConfig = {
   whatsappHref: "https://wa.me/447938994070",
   promoVideo: {
     src: "/videos/a2b-promo.mp4",
+    /** Google Drive embed — reliable playback when self-hosted file is unavailable */
+    embedUrl:
+      "https://drive.google.com/file/d/18WmFVo8GzVP0Kg1DuGz_m3FGqyLS1phL/preview",
     driveUrl:
       "https://drive.google.com/file/d/18WmFVo8GzVP0Kg1DuGz_m3FGqyLS1phL/view",
   },

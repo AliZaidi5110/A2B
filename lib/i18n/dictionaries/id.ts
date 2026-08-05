@@ -86,6 +86,7 @@ export const id: Dictionary = {
       "Lihat bagaimana A2B menghadirkan perjalanan Mercedes chauffeur yang elegan dan tur UK khusus — dari transfer bandara hingga wisata pribadi.",
     caption: "Video promosi A2B Chauffeur Tour Services",
     fallback: "Browser Anda tidak mendukung pemutaran video.",
+    openExternal: "Buka video di tab baru →",
   },
   services: {
     eyebrow: "Layanan Kami",
