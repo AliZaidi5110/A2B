@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -39,6 +40,14 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui,
     sans-serif;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
 }
 
 .font-zh,
@@ -61,12 +70,18 @@ body {
 }
 
 .container-site {
-  width: min(1180px, calc(100% - 2rem));
+  width: min(1180px, calc(100% - 1.25rem));
   margin-inline: auto;
 }
 
+@media (min-width: 640px) {
+  .container-site {
+    width: min(1180px, calc(100% - 2rem));
+  }
+}
+
 .section-pad {
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(2.75rem, 7vw, 7rem);
 }
 
 .eyebrow {
@@ -92,6 +107,8 @@ body {
   letter-spacing: 0.02em;
   line-height: 0.95;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .btn {
@@ -99,13 +116,22 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  min-height: 3rem;
-  padding: 0.75rem 1.5rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 1.15rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: transform 180ms ease, background-color 180ms ease, color 180ms ease,
     border-color 180ms ease;
+}
+
+@media (min-width: 640px) {
+  .btn {
+    min-height: 3rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
 }
 
 .btn:hover {
@@ -301,20 +327,46 @@ body {
   z-index: 51;
 }
 
+.contact-pill-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+@media (min-width: 640px) {
+  .contact-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
 .contact-pill {
   display: inline-flex;
+  width: 100%;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 0.1rem;
   border: 1px solid var(--line);
   background: rgba(20, 20, 22, 0.95);
-  padding: 0.45rem 0.85rem;
-  font-size: 0.62rem;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.58rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--foreground);
   transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease,
     transform 180ms ease;
+}
+
+@media (min-width: 640px) {
+  .contact-pill {
+    width: auto;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+  }
 }
 
 .contact-pill:hover {
@@ -325,11 +377,22 @@ body {
 }
 
 .contact-pill-value {
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   text-transform: none;
   color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .contact-pill-value {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
 }
 
 .contact-pill:hover .contact-pill-value {
@@ -354,6 +417,16 @@ body {
   color: rgba(255, 255, 255, 0.92);
 }
 
+.lang-switcher {
+  max-width: 100%;
+}
+
+@media (max-width: 379px) {
+  .lang-switcher-label {
+    display: none;
+  }
+}
+
 .wechat-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -361,23 +434,37 @@ body {
   display: grid;
   place-items: center;
   background: rgba(0, 0, 0, 0.72);
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 .wechat-modal {
   width: min(420px, 100%);
+  max-height: min(85vh, 560px);
+  overflow-y: auto;
   border: 1px solid rgba(245, 197, 24, 0.4);
   background: #141416;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 640px) {
+  .wechat-modal {
+    padding: 1.5rem;
+  }
 }
 
 .video-frame {
   position: relative;
   border: 1px solid var(--line);
   background: var(--surface-2);
-  padding: 0.75rem;
+  padding: 0.4rem;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+@media (min-width: 640px) {
+  .video-frame {
+    padding: 0.75rem;
+  }
 }
 
 .video-frame-accent {

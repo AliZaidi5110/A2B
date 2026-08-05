@@ -7,16 +7,14 @@ import { siteConfig } from "@/lib/site";
 export function ContactQuickBar({ dict }: { dict: Dictionary }) {
   return (
     <div className="contact-quick-bar border-b border-yellow/30 bg-surface-2">
-      <div className="container-site flex flex-col gap-2.5 py-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="min-w-0">
-          <p className="text-[0.72rem] font-bold uppercase tracking-[0.16em] text-yellow sm:text-xs">
-            {dict.header.tapMessage}
-          </p>
-          <p className="mt-0.5 text-[0.65rem] text-muted sm:text-xs">
-            {dict.header.messageUs}
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-2">
+      <div className="container-site py-2.5 sm:py-3">
+        <p className="text-center text-[0.62rem] font-bold uppercase leading-snug tracking-[0.12em] text-yellow sm:text-left sm:text-xs sm:tracking-[0.16em]">
+          {dict.header.tapMessage}
+        </p>
+        <p className="mt-0.5 hidden text-xs text-muted sm:block">
+          {dict.header.messageUs}
+        </p>
+        <div className="contact-pill-row mt-2">
           <a
             href={siteConfig.whatsappHref}
             target="_blank"

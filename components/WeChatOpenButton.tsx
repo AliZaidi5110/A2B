@@ -79,14 +79,18 @@ export function WeChatOpenButton({
             {copied ? (
               <p className="mt-2 text-sm font-semibold text-yellow">{copyLabel} ✓</p>
             ) : null}
-            <div className="mt-6 flex flex-wrap gap-2">
-              <button type="button" className="btn btn-primary" onClick={copyId}>
+            <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+              <button type="button" className="btn btn-primary w-full sm:w-auto" onClick={copyId}>
                 {copyLabel}
               </button>
-              <button type="button" className="btn btn-ghost" onClick={openWeChatApp}>
+              <button type="button" className="btn btn-ghost w-full sm:w-auto" onClick={openWeChatApp}>
                 {openAppLabel}
               </button>
-              <button type="button" className="btn btn-ghost" onClick={() => setOpen(false)}>
+              <button
+                type="button"
+                className="btn btn-ghost w-full sm:w-auto"
+                onClick={() => setOpen(false)}
+              >
                 {closeLabel}
               </button>
             </div>

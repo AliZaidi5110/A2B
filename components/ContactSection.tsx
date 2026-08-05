@@ -67,12 +67,12 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
   return (
     <section className="contact-taxipark relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(245,197,24,0.08),transparent_50%)]" />
-      <div className="container-site relative grid gap-12 section-pad lg:grid-cols-2 lg:gap-16">
+      <div className="container-site relative grid gap-8 section-pad lg:grid-cols-2 lg:gap-16">
         <SlideIn>
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-yellow">
             {dict.contact.openingHours}
           </p>
-          <h2 className="display mt-2 text-7xl text-foreground sm:text-8xl md:text-9xl">
+          <h2 className="display mt-2 text-5xl text-foreground sm:text-7xl md:text-8xl lg:text-9xl">
             <span className="text-yellow">{dict.contact.hoursValue}</span>
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
@@ -193,15 +193,15 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
         </SlideIn>
 
         <SlideIn delay={200}>
-          <div className="contact-form-panel relative h-full border border-line bg-surface/80 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-10 lg:p-12">
+          <div className="contact-form-panel relative h-full border border-line bg-surface/80 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-10 lg:p-12">
             <div className="absolute left-0 top-0 h-1 w-full bg-yellow" />
             <div className="text-center">
-              <h3 className="display text-4xl text-foreground sm:text-5xl">
+              <h3 className="display text-3xl text-foreground sm:text-4xl md:text-5xl">
                 {dict.contact.formTitle}
               </h3>
               <p className="mx-auto mt-3 max-w-sm text-sm text-muted">{dict.contact.formIntro}</p>
             </div>
-            <div className="mt-10">
+            <div className="mt-8 sm:mt-10">
               <ContactMessageForm dict={dict} />
             </div>
           </div>

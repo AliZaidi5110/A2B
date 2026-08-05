@@ -10,16 +10,16 @@ export function PromoVideo({ dict }: { dict: Dictionary }) {
         <div className="mx-auto max-w-4xl text-center">
           <SlideIn immediate>
             <p className="eyebrow justify-center">{dict.video.eyebrow}</p>
-            <h2 className="display mt-4 text-5xl text-foreground sm:text-6xl md:text-7xl">
+            <h2 className="display mt-4 text-3xl text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
               {dict.video.title}
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted">
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
               {dict.video.body}
             </p>
           </SlideIn>
 
           <SlideIn immediate delay={180}>
-            <div className="video-frame mt-10">
+            <div className="video-frame mt-6 sm:mt-10">
               <div className="video-frame-accent" aria-hidden />
               <div className="video-embed">
                 <iframe

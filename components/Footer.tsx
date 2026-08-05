@@ -19,19 +19,19 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <footer className="border-t border-line bg-surface">
       <div className="container-site grid gap-10 section-pad md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
-          <Link href={localizedPath(locale)} className="inline-flex items-center gap-3">
+          <Link href={localizedPath(locale)} className="inline-flex min-w-0 items-center gap-3">
             <Image
               src={siteConfig.logo}
               alt={siteConfig.name}
               width={64}
               height={64}
-              className="h-14 w-14 rounded-full object-cover ring-1 ring-yellow/40"
+              className="h-12 w-12 shrink-0 rounded-full object-cover ring-1 ring-yellow/40 sm:h-14 sm:w-14"
             />
-            <span className="flex flex-col">
-              <span className="text-xs font-bold uppercase tracking-[0.14em] text-yellow">
+            <span className="flex min-w-0 flex-col">
+              <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-yellow sm:text-xs">
                 {dict.common.brandSub}
               </span>
-              <span className="text-sm font-semibold text-foreground">
+              <span className="text-sm font-semibold leading-snug text-foreground">
                 {dict.common.brandLine}
               </span>
             </span>

@@ -25,9 +25,10 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-background/90 backdrop-blur-md">
+    <header className="site-header sticky top-0 z-50 border-b border-line bg-background/95 backdrop-blur-md">
       <ContactQuickBar dict={dict} />
-      <div className="border-b border-line bg-surface">
+
+      <div className="hidden border-b border-line bg-surface md:block">
         <div className="container-site flex flex-wrap items-center justify-between gap-3 py-2 text-sm text-muted">
           <p className="font-medium tracking-wide">
             {dict.header.callLabel} · <span className="text-yellow">{siteConfig.hours}</span>
@@ -37,7 +38,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </span>
           </p>
           <div className="flex items-center gap-3 sm:gap-4">
-            <SocialLinks compact className="hidden sm:flex" />
+            <SocialLinks compact className="hidden lg:flex" />
             <LanguageSwitcher locale={locale} label={dict.common.selectLanguage} />
             <a
               href={`tel:${siteConfig.phoneTel}`}
@@ -49,10 +50,10 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         </div>
       </div>
 
-      <div className="container-site flex items-center justify-between gap-4 py-3">
+      <div className="container-site flex items-center justify-between gap-2 py-2.5 sm:gap-4 sm:py-3">
         <Link
           href={localizedPath(locale)}
-          className="group flex items-center gap-3"
+          className="group flex min-w-0 flex-1 items-center gap-2 sm:gap-3"
           onClick={() => setOpen(false)}
         >
           <Image
@@ -60,14 +61,14 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             alt={siteConfig.name}
             width={56}
             height={56}
-            className="h-12 w-12 rounded-full object-cover ring-1 ring-yellow/40 sm:h-14 sm:w-14"
+            className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-yellow/40 sm:h-12 sm:w-12 md:h-14 md:w-14"
             priority
           />
           <span className="flex min-w-0 flex-col">
-            <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-yellow sm:text-xs">
+            <span className="truncate text-[0.6rem] font-bold uppercase tracking-[0.12em] text-yellow sm:text-[0.65rem] md:text-xs">
               {dict.common.brandSub}
             </span>
-            <span className="text-sm font-semibold leading-tight text-foreground sm:text-base">
+            <span className="truncate text-[0.72rem] font-semibold leading-tight text-foreground sm:text-sm md:text-base">
               {dict.common.brandLine}
             </span>
           </span>
@@ -91,12 +92,19 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           })}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
+          <a
+            href={`tel:${siteConfig.phoneTel}`}
+            className="btn btn-ghost px-2.5 py-2 text-[0.65rem] md:hidden"
+            aria-label={siteConfig.phoneDisplay}
+          >
+            Call
+          </a>
           <a
             href={siteConfig.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary hidden sm:inline-flex"
+            className="btn btn-primary hidden px-3 py-2 text-xs sm:inline-flex"
           >
             {dict.header.freeQuote}
           </a>
@@ -104,7 +112,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             type="button"
             aria-label={dict.common.menu}
             aria-expanded={open}
-            className="btn btn-ghost px-3 lg:hidden"
+            className="btn btn-ghost px-2.5 py-2 text-xs lg:hidden"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? dict.common.close : dict.common.menu}
@@ -113,11 +121,17 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       </div>
 
       {open ? (
-        <div className="border-t border-line bg-surface lg:hidden">
+        <div className="max-h-[70vh] overflow-y-auto border-t border-line bg-surface lg:hidden">
           <nav className="container-site flex flex-col gap-1 py-4">
-            <div className="mb-2 px-3">
+            <div className="mb-3 px-1">
               <LanguageSwitcher locale={locale} label={dict.common.selectLanguage} />
             </div>
+            <a
+              href={`tel:${siteConfig.phoneTel}`}
+              className="rounded-sm px-3 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-yellow"
+            >
+              {dict.hero.call} {siteConfig.phoneDisplay}
+            </a>
             {navKeys.map((item) => (
               <Link
                 key={item.key}
@@ -133,7 +147,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="btn btn-primary mt-2"
+              className="btn btn-primary mt-2 w-full"
             >
               {dict.header.freeQuote}
             </a>
