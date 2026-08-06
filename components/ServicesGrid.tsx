@@ -40,17 +40,19 @@ export function ServicesGrid({
       <div className="container-site">
         <SlideIn className="max-w-2xl">
           <p className="eyebrow">{dict.services.eyebrow}</p>
-          <h2 className="display mt-4 text-4xl text-foreground sm:text-5xl">
+          <h2 className="display mt-3 text-3xl text-foreground sm:mt-4 sm:text-4xl md:text-5xl">
             {dict.services.title}
           </h2>
-          <p className="mt-4 text-muted">{dict.services.intro}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted sm:mt-4 sm:text-base">
+            {dict.services.intro}
+          </p>
         </SlideIn>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 lg:mt-12 lg:grid-cols-3 lg:gap-6">
           {items.map((service, index) => (
             <SlideIn key={service.id} delay={index * 100} as="article">
-              <div className="surface-card group h-full overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-yellow/40">
-                <div className="relative h-44 overflow-hidden">
+              <div className="surface-card group flex h-full flex-col overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-yellow/40">
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
                     src={serviceImages[service.id] ?? "/images/hero/banner2.jpg"}
                     alt={service.title}
@@ -60,16 +62,18 @@ export function ServicesGrid({
                     quality={85}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface via-black/20 to-transparent" />
-                  <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center bg-yellow text-xl text-ink">
+                  <div className="absolute bottom-3 left-3 flex h-11 w-11 items-center justify-center bg-yellow text-lg text-ink sm:bottom-4 sm:left-4 sm:h-12 sm:w-12 sm:text-xl">
                     {icons[service.icon] ?? "●"}
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{service.description}</p>
+                <div className="flex flex-1 flex-col p-4 sm:p-5 md:p-6">
+                  <h3 className="text-lg font-bold text-foreground sm:text-xl">{service.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted sm:mt-3">
+                    {service.description}
+                  </p>
                   <Link
                     href={localizedPath(locale, `/fleet?service=${service.id}`)}
-                    className="mt-5 inline-flex text-sm font-bold uppercase tracking-[0.14em] text-yellow transition group-hover:translate-x-1"
+                    className="mt-4 inline-flex min-h-11 items-center text-sm font-bold uppercase tracking-[0.14em] text-yellow transition group-hover:translate-x-1 sm:mt-5"
                   >
                     {dict.common.bookNow} →
                   </Link>

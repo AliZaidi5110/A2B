@@ -55,6 +55,10 @@ video,
 iframe,
 svg {
   max-width: 100%;
+}
+
+img:not([style*="position: absolute"]):not([data-nimg]),
+video {
   height: auto;
 }
 
@@ -81,18 +85,12 @@ svg {
   width: 100%;
   max-width: 1180px;
   margin-inline: auto;
-  padding-inline: 0.75rem;
+  padding-inline: clamp(0.75rem, 3.5vw, 1.25rem);
   box-sizing: border-box;
 }
 
-@media (min-width: 640px) {
-  .container-site {
-    padding-inline: 1rem;
-  }
-}
-
 .section-pad {
-  padding-block: clamp(2.75rem, 7vw, 7rem);
+  padding-block: clamp(2.25rem, 6vw, 7rem);
 }
 
 .eyebrow {
@@ -204,6 +202,8 @@ svg {
   justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
   border: 1px solid var(--line);
   color: var(--foreground);
   font-size: 1.05rem;
@@ -213,9 +213,20 @@ svg {
 }
 
 .social-orb--compact {
-  width: 2.15rem;
-  height: 2.15rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
   font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .social-orb--compact {
+    width: 2.15rem;
+    height: 2.15rem;
+    min-width: 2.15rem;
+    min-height: 2.15rem;
+  }
 }
 
 .social-orb:hover {
@@ -223,6 +234,24 @@ svg {
   background: var(--yellow);
   color: var(--ink);
   transform: translateY(-2px);
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary::marker {
+  content: "";
+}
+
+.lang-switcher {
+  max-width: 100%;
+}
+
+@media (max-width: 379px) {
+  .lang-switcher-label {
+    display: none;
+  }
 }
 
 .contact-form-panel {
@@ -321,7 +350,7 @@ svg {
   color: var(--foreground);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .hamburger-btn,
   .mobile-nav {
     display: none !important;

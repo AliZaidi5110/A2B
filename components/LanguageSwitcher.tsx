@@ -20,7 +20,7 @@ export function LanguageSwitcher({
       <select
         value={locale}
         aria-label={label}
-        className="max-w-[9.5rem] cursor-pointer border border-line bg-surface px-2 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-foreground outline-none transition hover:border-yellow focus:border-yellow sm:max-w-[11rem]"
+        className="min-h-11 max-w-[9.5rem] cursor-pointer border border-line bg-surface px-2 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-foreground outline-none transition hover:border-yellow focus:border-yellow sm:max-w-[11rem]"
         onChange={(e) => {
           const next = e.target.value as Locale;
           router.push(`/${next}${rest}`);
