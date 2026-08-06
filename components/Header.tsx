@@ -108,15 +108,6 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           })}
         </nav>
 
-        <a
-          href={siteConfig.whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary hidden shrink-0 lg:inline-flex"
-        >
-          {dict.header.freeQuote}
-        </a>
-
         <button
           type="button"
           aria-label={open ? dict.common.close : dict.common.menu}
@@ -155,15 +146,6 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 {dict.nav[item.key]}
               </Link>
             ))}
-            <a
-              href={siteConfig.whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
-              className="btn btn-primary mt-3 w-full"
-            >
-              {dict.header.freeQuote}
-            </a>
           </nav>
         </div>
       ) : null}
