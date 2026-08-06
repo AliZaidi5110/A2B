@@ -80,7 +80,7 @@ export const ms: Dictionary = {
     contact: "Hubungi",
   },
   hero: {
-    eyebrow: "A2B Chauffeur Tour Services",
+    eyebrow: "A2B Chauffeur & Tour Services",
     tagline: "Tempah Chauffeur dan Lawatan Mewah Anda di Persiaran",
     support:
       "28 tahun pengalaman chauffeur dan lawatan. Chauffeur UK terlatih. Laluan cekap. Mercedes mewah dan kenderaan VIP — tempah melalui telefon atau WeChat bila-bila masa.",
@@ -178,7 +178,7 @@ export const ms: Dictionary = {
     pageSubtitle:
       "Perkhidmatan chauffeur dan lawatan mewah yang dibina atas keselesaan, ketepatan masa, dan laluan paling cekap.",
     storyEyebrow: "Kisah kami",
-    storyTitle: "A2B Chauffeur Tour Services",
+    storyTitle: "A2B Chauffeur & Tour Services",
     storyP1:
       "Dengan 28 tahun pengalaman, A2B menyediakan perjalanan chauffeur khas untuk perniagaan, rekreasi, dan itinerari VIP dari pangkalan London kami di seluruh United Kingdom. Pemandu kami sangat terlatih dan memahami jalan UK supaya setiap perjalanan cekap dan bebas tekanan.",
     storyP2:
@@ -333,7 +333,7 @@ export const ms: Dictionary = {
     mapTitle: "Jumpai Kami di London",
   },
   pageHero: {
-    eyebrow: "A2B Chauffeur Tours",
+    eyebrow: "A2B Chauffeur & Tours",
   },
   tours: {
     eyebrow: "Lawatan Chauffeur Persendirian",

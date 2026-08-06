@@ -78,7 +78,7 @@ export const en = {
     contact: "Contact",
   },
   hero: {
-    eyebrow: "A2B Chauffeur Tour Services",
+    eyebrow: "A2B Chauffeur & Tour Services",
     tagline: "Book Your Luxury Chauffeur and Tour Across the Road",
     support:
       "28 years of chauffeur and tour experience. Trained UK chauffeurs. Efficient routes. Luxury Mercedes and VIP vehicles — book by phone or WeChat anytime.",
@@ -176,7 +176,7 @@ export const en = {
     pageSubtitle:
       "Luxury chauffeur and tour services built around comfort, punctuality, and the most efficient routes.",
     storyEyebrow: "Our story",
-    storyTitle: "A2B Chauffeur Tour Services",
+    storyTitle: "A2B Chauffeur & Tour Services",
     storyP1:
       "With 28 years of experience, A2B provides bespoke chauffeur travel for business, leisure, and VIP itineraries from our London base across the United Kingdom. Our drivers are very well trained and fully educated on UK roads so every journey is efficient and stress-free.",
     storyP2:
@@ -331,7 +331,7 @@ export const en = {
     mapTitle: "Find Us in London",
   },
   pageHero: {
-    eyebrow: "A2B Chauffeur Tours",
+    eyebrow: "A2B Chauffeur & Tours",
   },
   tours: {
     eyebrow: "Private Chauffeur Tours",

@@ -78,7 +78,7 @@ export const zh: Dictionary = {
     contact: "联系",
   },
   hero: {
-    eyebrow: "A2B 专车旅游服务",
+    eyebrow: "A2B 专车与旅游服务",
     tagline: "预订您的豪华专车与观光之旅，一路畅行",
     support:
       "28年专车与观光经验。训练有素的英国司机，高效路线，豪华奔驰与VIP车辆 — 电话或微信随时预订。",

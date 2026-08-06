@@ -80,7 +80,7 @@ export const th: Dictionary = {
     contact: "ติดต่อ",
   },
   hero: {
-    eyebrow: "A2B Chauffeur Tour Services",
+    eyebrow: "A2B Chauffeur & Tour Services",
     tagline: "จองรถเช่าพร้อมคนขับหรูและทัวร์ตลอดเส้นทาง",
     support:
       "ประสบการณ์ 28 ปีด้านรถเช่าพร้อมคนขับและทัวร์ คนขับมืออาชีพในสหราชอาณาจักร เส้นทางที่มีประสิทธิภาพ รถ Mercedes หรูและรถ VIP — จองทางโทรศัพท์หรือ WeChat ได้ตลอดเวลา",
@@ -178,7 +178,7 @@ export const th: Dictionary = {
     pageSubtitle:
       "บริการรถเช่าพร้อมคนขับและทัวร์หรูที่สร้างขึ้นบนความสะดวกสบาย ความตรงเวลา และเส้นทางที่มีประสิทธิภาพที่สุด",
     storyEyebrow: "เรื่องราวของเรา",
-    storyTitle: "A2B Chauffeur Tour Services",
+    storyTitle: "A2B Chauffeur & Tour Services",
     storyP1:
       "ด้วยประสบการณ์ 28 ปี A2B มอบการเดินทางด้วยรถเช่าพร้อมคนขับตามความต้องการสำหรับธุรกิจ นันทนาการ และแผนการเดินทาง VIP จากฐานในลอนดอนทั่วสหราชอาณาจักร คนขับของเราได้รับการฝึกฝนอย่างดีและคุ้นเคยกับถนนในสหราชอาณาจักร ทำให้ทุกการเดินทางมีประสิทธิภาพและไร้ความกังวล",
     storyP2:
@@ -333,7 +333,7 @@ export const th: Dictionary = {
     mapTitle: "ค้นหาเราในลอนดอน",
   },
   pageHero: {
-    eyebrow: "A2B Chauffeur Tours",
+    eyebrow: "A2B Chauffeur & Tours",
   },
   tours: {
     eyebrow: "ทัวร์ส่วนตัวพร้อมคนขับ",
