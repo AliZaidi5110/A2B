@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ContactQuickBar } from "@/components/ContactQuickBar";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { SocialLinks } from "@/components/SocialLinks";
 import { localizedPath, type Locale } from "@/lib/i18n/config";
@@ -45,8 +44,6 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
   return (
     <header className="site-header sticky top-0 z-50 w-full max-w-full overflow-x-clip border-b border-line bg-background/95 backdrop-blur-md">
-      <ContactQuickBar dict={dict} />
-
       <div className="hidden border-b border-line bg-surface lg:block">
         <div className="container-site flex flex-wrap items-center justify-between gap-3 py-2 text-sm text-muted">
           <p className="font-medium tracking-wide">
