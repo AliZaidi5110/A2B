@@ -198,6 +198,8 @@ export const ms: Dictionary = {
       "Berikut ialah kenderaan yang tersedia untuk pelanggan — Mercedes mewah dan pilihan VIP korporat.",
     ctaTitle: "Bersedia untuk menempah kenderaan anda?",
     ctaBody: "Hubungi 24/7 atau hantar pertanyaan dalam talian.",
+    bookingFor: "Tempahan:",
+    bookingNext: "Pilih kenderaan di bawah, kemudian teruskan ke halaman hubungi.",
     vehicles: [
       {
         id: "mercedes-e-class",

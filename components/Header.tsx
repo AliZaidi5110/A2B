@@ -42,6 +42,16 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     return () => document.body.classList.remove("nav-open");
   }, [open]);
 
+  useEffect(() => {
+    const onResize = () => {
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
     <header className="site-header sticky top-0 z-50 w-full max-w-full overflow-x-clip border-b border-line bg-background/95 backdrop-blur-md">
       <div className="hidden border-b border-line bg-surface lg:block">

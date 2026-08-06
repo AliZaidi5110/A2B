@@ -66,10 +66,10 @@ export function ServicesGrid({
                   <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{service.description}</p>
                   <Link
-                    href={localizedPath(locale, "/services")}
+                    href={localizedPath(locale, `/fleet?service=${service.id}`)}
                     className="mt-5 inline-flex text-sm font-bold uppercase tracking-[0.14em] text-yellow transition group-hover:translate-x-1"
                   >
-                    {dict.common.learnMore}
+                    {dict.common.bookNow} →
                   </Link>
                 </div>
               </div>

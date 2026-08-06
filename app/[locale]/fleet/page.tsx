@@ -26,12 +26,24 @@ export async function generateMetadata({
 
 export default async function FleetPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ service?: string }>;
 }) {
   const { locale: localeParam } = await params;
+  const { service: serviceParam } = await searchParams;
   const locale = (isLocale(localeParam) ? localeParam : "en") as Locale;
   const dict = getDictionary(locale);
+  const serviceId = dict.services.items.some((item) => item.id === serviceParam)
+    ? serviceParam
+    : undefined;
+  const selectedService = serviceId
+    ? dict.services.items.find((item) => item.id === serviceId)
+    : undefined;
+  const contactHref = serviceId
+    ? localizedPath(locale, `/contact?service=${serviceId}`)
+    : localizedPath(locale, "/contact");
 
   return (
     <>
@@ -41,7 +53,21 @@ export default async function FleetPage({
         subtitle={dict.fleet.pageSubtitle}
         image="/images/hero/banner2.jpg"
       />
-      <FleetGrid locale={locale} dict={dict} showHeader={false} />
+      {selectedService ? (
+        <section className="border-b border-line bg-surface-2 py-6">
+          <div className="container-site">
+            <SlideIn>
+              <p className="text-sm text-muted">
+                {dict.fleet.bookingFor}{" "}
+                <span className="font-bold text-yellow">{selectedService.title}</span>
+                {" · "}
+                {dict.fleet.bookingNext}
+              </p>
+            </SlideIn>
+          </div>
+        </section>
+      ) : null}
+      <FleetGrid locale={locale} dict={dict} showHeader={false} serviceId={serviceId} />
       <section className="border-t border-line bg-surface py-16">
         <div className="container-site flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <SlideIn>
@@ -51,7 +77,7 @@ export default async function FleetPage({
             <p className="mt-2 text-muted">{dict.fleet.ctaBody}</p>
           </SlideIn>
           <SlideIn delay={160}>
-            <Link href={localizedPath(locale, "/contact")} className="btn btn-primary">
+            <Link href={contactHref} className="btn btn-primary">
               {dict.common.bookYourRide}
             </Link>
           </SlideIn>

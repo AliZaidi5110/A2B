@@ -183,6 +183,8 @@ export const zh: Dictionary = {
     pageSubtitle: "以下为客户可选车辆 — 豪华奔驰与VIP商务选项。",
     ctaTitle: "准备好预订车辆了吗？",
     ctaBody: "全天候致电，或在线提交咨询。",
+    bookingFor: "预订：",
+    bookingNext: "请先选择下方车辆，然后继续联系我们。",
     vehicles: [
       {
         id: "mercedes-e-class",

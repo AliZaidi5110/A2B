@@ -196,6 +196,8 @@ export const en = {
       "Following are the vehicles available for clients — luxury Mercedes and VIP corporate options.",
     ctaTitle: "Ready to book your vehicle?",
     ctaBody: "Call 24/7 or send an enquiry online.",
+    bookingFor: "Booking:",
+    bookingNext: "Choose your vehicle below, then continue to contact us.",
     vehicles: [
       {
         id: "mercedes-e-class",

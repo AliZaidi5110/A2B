@@ -16,12 +16,17 @@ export function FleetGrid({
   dict,
   limit,
   showHeader = true,
+  serviceId,
 }: {
   locale: Locale;
   dict: Dictionary;
   limit?: number;
   showHeader?: boolean;
+  serviceId?: string;
 }) {
+  const contactHref = serviceId
+    ? localizedPath(locale, `/contact?service=${serviceId}`)
+    : localizedPath(locale, "/contact");
   const items = limit ? dict.fleet.vehicles.slice(0, limit) : dict.fleet.vehicles;
 
   return (
@@ -81,10 +86,10 @@ export function FleetGrid({
                       {vehicle.passengers}
                     </span>
                     <Link
-                      href={localizedPath(locale, "/contact")}
+                      href={contactHref}
                       className="text-sm font-bold uppercase tracking-[0.12em] text-yellow transition group-hover:translate-x-1"
                     >
-                      {dict.common.book}
+                      {dict.common.bookNow} →
                     </Link>
                   </div>
                 </div>
