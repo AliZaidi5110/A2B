@@ -188,6 +188,10 @@ svg {
 
 .contact-input::placeholder {
   color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .contact-input:focus {

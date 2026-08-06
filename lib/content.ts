@@ -7,6 +7,13 @@ export const services = [
     icon: "plane",
   },
   {
+    id: "seaport",
+    title: "Seaport Transfer",
+    description:
+      "Cruise and ferry transfers to and from Dover, Tilbury, Portsmouth, Southampton, and major UK cruise terminals.",
+    icon: "anchor",
+  },
+  {
     id: "business",
     title: "Business Transport",
     description:

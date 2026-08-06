@@ -6,6 +6,7 @@ import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 const icons: Record<string, string> = {
   plane: "✈",
+  anchor: "⚓",
   briefcase: "▣",
   city: "⌂",
   map: "◎",
@@ -15,6 +16,7 @@ const icons: Record<string, string> = {
 
 const serviceImages: Record<string, string> = {
   airport: "/images/hero/slide1.jpg",
+  seaport: "/images/hero/banner2.jpg",
   business: "/images/about/story-car.jpg",
   city: "/images/hero/bg1.jpg",
   tours: "/images/about/hero-about.jpg",

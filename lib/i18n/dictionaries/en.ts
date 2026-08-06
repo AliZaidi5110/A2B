@@ -8,7 +8,7 @@ export const en = {
       "A2B fleet: Mercedes E-Class, Mercedes V-Class, Mercedes S-Class, and VIP corporate luxury vehicles available for clients across the UK.",
     servicesTitle: "Services",
     servicesDescription:
-      "Airport transfers, business transport, city travel, chauffeur tours, and VIP corporate services from A2B Chauffeur Tour Services.",
+      "Airport and seaport transfers, business transport, city travel, chauffeur tours, and VIP corporate services from A2B Chauffeur Tour Services.",
     aboutTitle: "About Us",
     aboutDescription:
       "Learn about A2B Chauffeur Tour Services — trained UK chauffeurs, luxury Mercedes fleet, and bespoke VIP travel across the United Kingdom.",
@@ -89,7 +89,7 @@ export const en = {
     eyebrow: "Watch A2B",
     title: "Luxury Chauffeur & Tour Experience",
     body:
-      "See how A2B delivers polished Mercedes chauffeur travel and bespoke UK tours — from airport transfers to private sightseeing.",
+      "See how A2B delivers polished Mercedes chauffeur travel and bespoke UK tours — from airport and seaport transfers to private sightseeing.",
     caption: "A2B Chauffeur Tour Services promotional video",
     fallback: "Your browser does not support video playback.",
     openExternal: "Open video in new tab →",
@@ -99,7 +99,7 @@ export const en = {
     eyebrow: "Our Services",
     title: "Trusted Chauffeur Solutions",
     intro:
-      "From airport transfers to VIP corporate travel, A2B delivers polished luxury journeys across the United Kingdom.",
+      "From airport and seaport transfers to VIP corporate travel, A2B delivers polished luxury journeys across the United Kingdom.",
     items: [
       {
         id: "airport",
@@ -107,6 +107,13 @@ export const en = {
         description:
           "Meet-and-greet and door-to-door transfers to and from major UK airports with tracked, efficient routing.",
         icon: "plane",
+      },
+      {
+        id: "seaport",
+        title: "Seaport Transfer",
+        description:
+          "Cruise and ferry transfers to and from Dover, Tilbury, Portsmouth, Southampton, and major UK cruise terminals.",
+        icon: "anchor",
       },
       {
         id: "business",
@@ -147,13 +154,13 @@ export const en = {
     whyEyebrow: "Why choose A2B",
     whyTitle: "Efficient Routes. Polished Service.",
     whyBody:
-      "We take the most efficient route and pair you with chauffeurs who know UK roads. Whether you need an airport transfer or a full-day tour, every journey is tailored.",
+      "We take the most efficient route and pair you with chauffeurs who know UK roads. Whether you need an airport or seaport transfer or a full-day tour, every journey is tailored.",
     whyImageAlt: "Chauffeur holding door for passenger",
     faqEyebrow: "FAQs",
     faqTitle: "Frequently Asked",
     pageTitle: "Our Services",
     pageSubtitle:
-      "Bespoke chauffeur solutions for airports, business, city travel, and luxury tours.",
+      "Bespoke chauffeur solutions for airports, seaports, business, city travel, and luxury tours.",
   },
   about: {
     eyebrow: "Welcome to our company",
@@ -244,7 +251,7 @@ export const en = {
       "To get the ride of your chauffeur please select from the following and leave your details. We take the most efficient route.",
     firstName: "First name *",
     lastName: "Last name *",
-    email: "Email *",
+    email: "EMAIL *",
     phone: "Phone",
     vehicle: "Choose vehicle",
     selectVehicle: "Select taxi type",
@@ -326,9 +333,9 @@ export const en = {
       "Our chauffeurs are available around the clock across the United Kingdom. Call, WhatsApp, WeChat, LINE, or send a message — we take the most efficient route for every journey.",
     social: "Social:",
     getTaxiOnline: "Book Online",
-    yourName: "Your Name *",
-    yourEmail: "Your Email *",
-    yourMessage: "Message *",
+    yourName: "YOUR NAME *",
+    yourEmail: "YOUR EMAIL *",
+    yourMessage: "MESSAGE *",
     send: "Send Message",
     mapTitle: "Find Us in London",
   },

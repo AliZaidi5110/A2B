@@ -10,7 +10,7 @@ export const zh: Dictionary = {
       "A2B车队：奔驰E级、奔驰V级、奔驰S级及VIP商务豪华车辆，服务英国全境客户。",
     servicesTitle: "服务项目",
     servicesDescription:
-      "机场接送、商务用车、城市交通、专车观光及VIP商务服务 — A2B专车旅游服务。",
+      "机场接送、港口接送、商务用车、城市交通、专车观光及VIP商务服务 — A2B专车旅游服务。",
     aboutTitle: "关于我们",
     aboutDescription:
       "了解A2B专车旅游服务 — 训练有素的英国司机、豪华奔驰车队与定制VIP出行。",
@@ -97,13 +97,20 @@ export const zh: Dictionary = {
   services: {
     eyebrow: "我们的服务",
     title: "值得信赖的专车方案",
-    intro: "从机场接送到VIP商务出行，A2B为您提供精致豪华的英国全境旅程。",
+    intro: "从机场、港口接到VIP商务出行，A2B为您提供精致豪华的英国全境旅程。",
     items: [
       {
         id: "airport",
         title: "机场接送",
         description: "主要英国机场举牌接机与点对点接送，路线高效可靠。",
         icon: "plane",
+      },
+      {
+        id: "seaport",
+        title: "港口接送",
+        description:
+          "邮轮与渡轮港口接送，覆盖多佛、蒂尔伯里、朴茨茅斯、南安普顿及英国主要邮轮码头。",
+        icon: "anchor",
       },
       {
         id: "business",
@@ -139,12 +146,12 @@ export const zh: Dictionary = {
     whyEyebrow: "为什么选择 A2B",
     whyTitle: "高效路线 · 精致服务",
     whyBody:
-      "我们选择最高效的路线，并为您配备熟悉英国道路的专车司机。无论机场接送还是全日观光，每段行程都为您量身定制。",
+      "我们选择最高效的路线，并为您配备熟悉英国道路的专车司机。无论机场、港口接送还是全日观光，每段行程都为您量身定制。",
     whyImageAlt: "司机为乘客开门服务",
     faqEyebrow: "常见问题",
     faqTitle: "常见疑问",
     pageTitle: "我们的服务",
-    pageSubtitle: "机场、商务、城市交通与豪华观光的定制专车方案。",
+    pageSubtitle: "机场、港口、商务、城市交通与豪华观光的定制专车方案。",
   },
   about: {
     eyebrow: "欢迎了解我们",

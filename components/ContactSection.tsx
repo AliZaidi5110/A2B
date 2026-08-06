@@ -163,6 +163,19 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
             <li>
               <div className="flex items-start gap-4 text-foreground">
                 <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow">
+                  <span className="text-sm font-bold">@</span>
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-xs font-bold uppercase tracking-[0.16em] text-muted">
+                    {dict.contact.social}
+                  </span>
+                  <SocialLinks className="mt-3" />
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="flex items-start gap-4 text-foreground">
+                <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center border border-yellow/40 bg-yellow/10 text-yellow">
                   <PinIcon />
                 </span>
                 <span>
@@ -178,11 +191,6 @@ export function ContactSection({ locale, dict }: { locale: Locale; dict: Diction
               </div>
             </li>
           </ul>
-
-          <div className="mt-10">
-            <p className="text-sm font-bold text-foreground">{dict.contact.social}</p>
-            <SocialLinks className="mt-4" />
-          </div>
 
           <Link
             href={localizedPath(locale, "/fleet")}

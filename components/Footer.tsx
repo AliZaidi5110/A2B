@@ -46,31 +46,6 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           >
             {siteConfig.phoneDisplay}
           </a>
-          <p className="mt-2 text-sm text-muted">
-            {dict.common.whatsapp}:{" "}
-            <a
-              href={siteConfig.whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-yellow"
-            >
-              {siteConfig.whatsappDisplay}
-            </a>
-          </p>
-          <p className="mt-1 text-sm text-muted">
-            {dict.common.wechat}: {siteConfig.wechat}
-          </p>
-          <p className="mt-1 text-sm text-muted">
-            {dict.common.line}:{" "}
-            <a
-              href={siteConfig.lineHref}
-              target="_blank"
-              rel="noreferrer"
-              className="transition hover:text-yellow"
-            >
-              {siteConfig.lineDisplay}
-            </a>
-          </p>
         </div>
 
         <div>
@@ -123,6 +98,33 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <p className="mt-4 text-sm text-muted">
             {dict.common.available} {siteConfig.hours}
           </p>
+          <div className="mt-6 space-y-2 text-sm text-muted">
+            <p>
+              {dict.common.whatsapp}:{" "}
+              <a
+                href={siteConfig.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-yellow"
+              >
+                {siteConfig.whatsappDisplay}
+              </a>
+            </p>
+            <p>
+              {dict.common.wechat}: {siteConfig.wechat}
+            </p>
+            <p>
+              {dict.common.line}:{" "}
+              <a
+                href={siteConfig.lineHref}
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:text-yellow"
+              >
+                {siteConfig.lineDisplay}
+              </a>
+            </p>
+          </div>
           <p className="mt-6 text-sm font-bold uppercase tracking-[0.18em] text-yellow">
             {dict.contact.social}
           </p>

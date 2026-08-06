@@ -10,7 +10,7 @@ export const ms: Dictionary = {
       "Armada A2B: Mercedes E-Class, Mercedes V-Class, Mercedes S-Class, dan kenderaan VIP korporat mewah untuk pelanggan di seluruh UK.",
     servicesTitle: "Perkhidmatan",
     servicesDescription:
-      "Pemindahan lapangan terbang, pengangkutan perniagaan, perjalanan bandar, lawatan chauffeur, dan perkhidmatan VIP korporat daripada A2B Chauffeur Tour Services.",
+      "Pemindahan lapangan terbang dan pelabuhan, pengangkutan perniagaan, perjalanan bandar, lawatan chauffeur, dan perkhidmatan VIP korporat daripada A2B Chauffeur Tour Services.",
     aboutTitle: "Tentang Kami",
     aboutDescription:
       "Ketahui tentang A2B Chauffeur Tour Services — chauffeur UK terlatih, armada Mercedes mewah, dan perjalanan VIP khas di seluruh United Kingdom.",
@@ -101,7 +101,7 @@ export const ms: Dictionary = {
     eyebrow: "Perkhidmatan Kami",
     title: "Penyelesaian Chauffeur Dipercayai",
     intro:
-      "Dari pemindahan lapangan terbang hingga perjalanan VIP korporat, A2B menyampaikan perjalanan mewah yang teratur di seluruh United Kingdom.",
+      "Dari pemindahan lapangan terbang dan pelabuhan hingga perjalanan VIP korporat, A2B menyampaikan perjalanan mewah yang teratur di seluruh United Kingdom.",
     items: [
       {
         id: "airport",
@@ -109,6 +109,13 @@ export const ms: Dictionary = {
         description:
           "Perkhidmatan meet-and-greet dan pemindahan pintu ke pintu ke dan dari lapangan terbang utama UK dengan laluan cekap yang dipantau.",
         icon: "plane",
+      },
+      {
+        id: "seaport",
+        title: "Pemindahan Pelabuhan",
+        description:
+          "Pemindahan kapal pesiar dan feri ke dan dari Dover, Tilbury, Portsmouth, Southampton, dan terminal kapal pesiar utama UK.",
+        icon: "anchor",
       },
       {
         id: "business",
@@ -149,13 +156,13 @@ export const ms: Dictionary = {
     whyEyebrow: "Mengapa pilih A2B",
     whyTitle: "Laluan Cekap. Perkhidmatan Prima.",
     whyBody:
-      "Kami mengambil laluan paling cekap dan memasangkan anda dengan chauffeur yang mengenali jalan UK. Sama ada pemindahan lapangan terbang atau lawatan sehari penuh, setiap perjalanan disesuaikan.",
+      "Kami mengambil laluan paling cekap dan memasangkan anda dengan chauffeur yang mengenali jalan UK. Sama ada pemindahan lapangan terbang, pelabuhan, atau lawatan sehari penuh, setiap perjalanan disesuaikan.",
     whyImageAlt: "Chauffeur membuka pintu untuk penumpang",
     faqEyebrow: "Soalan Lazim",
     faqTitle: "Soalan Kerap Ditanya",
     pageTitle: "Perkhidmatan Kami",
     pageSubtitle:
-      "Penyelesaian chauffeur khas untuk lapangan terbang, perniagaan, perjalanan bandar, dan lawatan mewah.",
+      "Penyelesaian chauffeur khas untuk lapangan terbang, pelabuhan, perniagaan, perjalanan bandar, dan lawatan mewah.",
   },
   about: {
     eyebrow: "Selamat datang ke syarikat kami",

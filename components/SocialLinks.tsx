@@ -70,7 +70,7 @@ const links = [
 
 export function SocialLinks({ className = "", compact = false }: SocialLinksProps) {
   return (
-    <div className={`flex flex-wrap items-center gap-3 ${className}`}>
+    <div className={`flex flex-nowrap items-center gap-2 sm:gap-3 ${className}`}>
       {links.map(({ key, href, label, Icon }) => (
         <a
           key={key}

@@ -91,6 +91,9 @@ export function BookingForm({
             required
             type="email"
             name="email"
+            autoCapitalize="off"
+            autoCorrect="off"
+            spellCheck={false}
             className="w-full border border-line bg-background px-4 py-3 text-sm text-foreground outline-none transition focus:border-yellow"
           />
         </label>

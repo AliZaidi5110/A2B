@@ -10,7 +10,7 @@ export const id: Dictionary = {
       "Armada A2B: Mercedes E-Class, Mercedes V-Class, Mercedes S-Class, dan kendaraan VIP korporat mewah untuk klien di seluruh Inggris.",
     servicesTitle: "Layanan",
     servicesDescription:
-      "Transfer bandara, transportasi bisnis, perjalanan kota, tur chauffeur, dan layanan VIP korporat dari A2B Chauffeur Tour Services.",
+      "Transfer bandara dan pelabuhan, transportasi bisnis, perjalanan kota, tur chauffeur, dan layanan VIP korporat dari A2B Chauffeur Tour Services.",
     aboutTitle: "Tentang Kami",
     aboutDescription:
       "Kenali A2B Chauffeur Tour Services — chauffeur Inggris terlatih, armada Mercedes mewah, dan perjalanan VIP khusus di seluruh Britania Raya.",
@@ -101,7 +101,7 @@ export const id: Dictionary = {
     eyebrow: "Layanan Kami",
     title: "Solusi Chauffeur Terpercaya",
     intro:
-      "Dari transfer bandara hingga perjalanan VIP korporat, A2B menghadirkan perjalanan mewah yang rapi di seluruh Britania Raya.",
+      "Dari transfer bandara dan pelabuhan hingga perjalanan VIP korporat, A2B menghadirkan perjalanan mewah yang rapi di seluruh Britania Raya.",
     items: [
       {
         id: "airport",
@@ -109,6 +109,13 @@ export const id: Dictionary = {
         description:
           "Layanan meet-and-greet dan transfer door-to-door ke dan dari bandara utama Inggris dengan rute efisien yang terpantau.",
         icon: "plane",
+      },
+      {
+        id: "seaport",
+        title: "Transfer Pelabuhan",
+        description:
+          "Transfer kapal pesiar dan feri ke dan dari Dover, Tilbury, Portsmouth, Southampton, dan terminal kapal pesiar utama di Inggris.",
+        icon: "anchor",
       },
       {
         id: "business",
@@ -149,13 +156,13 @@ export const id: Dictionary = {
     whyEyebrow: "Mengapa memilih A2B",
     whyTitle: "Rute Efisien. Layanan Prima.",
     whyBody:
-      "Kami menempuh rute paling efisien dan memasangkan Anda dengan chauffeur yang mengenal jalan Inggris. Baik transfer bandara maupun tur sehari penuh, setiap perjalanan disesuaikan untuk Anda.",
+      "Kami menempuh rute paling efisien dan memasangkan Anda dengan chauffeur yang mengenal jalan Inggris. Baik transfer bandara, pelabuhan, maupun tur sehari penuh, setiap perjalanan disesuaikan untuk Anda.",
     whyImageAlt: "Chauffeur membuka pintu untuk penumpang",
     faqEyebrow: "FAQ",
     faqTitle: "Pertanyaan Umum",
     pageTitle: "Layanan Kami",
     pageSubtitle:
-      "Solusi chauffeur khusus untuk bandara, bisnis, perjalanan kota, dan tur mewah.",
+      "Solusi chauffeur khusus untuk bandara, pelabuhan, bisnis, perjalanan kota, dan tur mewah.",
   },
   about: {
     eyebrow: "Selamat datang di perusahaan kami",

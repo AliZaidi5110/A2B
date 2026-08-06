@@ -59,6 +59,9 @@ export function ContactMessageForm({ dict }: { dict: Dictionary }) {
           type="email"
           name="email"
           placeholder={dict.contact.yourEmail}
+          autoCapitalize="off"
+          autoCorrect="off"
+          spellCheck={false}
           className="contact-input"
         />
       </label>
