@@ -90,7 +90,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 xl:gap-6 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-6">
           {navKeys.map((item) => {
             const href = localizedPath(locale, item.href);
             const active = pathname === href;
@@ -113,7 +113,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           aria-label={open ? dict.common.close : dict.common.menu}
           aria-expanded={open}
           aria-controls="mobile-nav"
-          className="hamburger-btn lg:hidden"
+          className="hamburger-btn inline-flex lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           <HamburgerIcon open={open} />

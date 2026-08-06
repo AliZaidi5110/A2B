@@ -307,7 +307,6 @@ svg {
 }
 
 .hamburger-btn {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2.75rem;
@@ -316,6 +315,13 @@ svg {
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--foreground);
+}
+
+@media (min-width: 1024px) {
+  .hamburger-btn,
+  .mobile-nav {
+    display: none !important;
+  }
 }
 
 .hamburger-btn:hover,
